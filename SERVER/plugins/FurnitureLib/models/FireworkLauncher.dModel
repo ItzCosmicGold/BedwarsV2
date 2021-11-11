@@ -1,0 +1,17 @@
+FireworkLauncher:
+  system-ID: FireworkLauncher
+  displayName: '&cFireworkLauncher'
+  itemGlowEffect: false
+  spawnMaterial: PIG_SPAWN_EGG
+  itemLore: []
+  crafting:
+    recipe: XXX,XXX,XXX
+    disable: true
+    index:
+      X: AIR
+  projectData:
+    entities:
+      '0': H4sIAAAAAAAAAONiYOBg4HLNK8ksqQypLEhl4HYM8vUPig8OcfRzYWbgdEosTg3ISSxJZQACIN8zryyzODMpB8RnZGZg800syk4tAnG4gMaU5qQWOeal56RyMXAGebp7hMQDTWNjYIyw/xYu4fXcpR3IjmSAAiA7igEOuMBmp+aV5BdVcjFw+Dp6+nkAncDBwJSZwsCfm5mXmlyUmFZiVVySmZzNyMDqnF+aV8II0sfhk5+cWJKZn8fGwBGh65+WVpxasv/mTCCYBbSDIwom9ABiESsDa0BmSXIGxAkckRjSzJGJ5c4mIDYAIyYY5h0BAAA=
+      '1': H4sIAAAAAAAAAD1OMU7DQBAcY9m6HAUtn6CjoolMgogRTiLHEnGa6DBrOMWc0XkD8gt4A3yGmifQ0fEDas44MNXMjmZmJSAgzwxrbrP2gbAfpcksXS+yaDr2MThVDc0rxQQHp2PzqBt9XXXa8xEmym7IdkK6mm1FNjK3FUkM0vh8kq1dWwhvOfy+Orz4Gj87nmMHx1f4h/ztJsO1bSVEEsXTiXtBYE/f4OBeGyqsKvmkYV1sPASjemvY63Lisi4U69qEEMujWVk2xG8fLw6vbkOs/k6f/VCAYK65uOtfEPnOHr73iQB+rp5Gx539A8BVTu0dAQAA
+      '2': H4sIAAAAAAAAAONiYOBg4HLNK8ksqQypLEhl4HYM8vUPig8OcfRzYWbgdEosTg3ISSxJZQACIN8zryyzODMpB8RnZGZg800syk4tAnG4gMaU5qQWOeal56RyMXAGebp7hMQDTWNjYIzY/1Pxd4iLrgSQHWmPYEcxwAEHA4tfYm4qA5eym2eQa7h/kLcyFwOHT35yYklmfh4bA0eErn9aWnFqyf7XxiDAABSKggmtnAkEsxhYGVgDMkuSM0DmAaUjYdI7QdIzgNLMkYnlziYgaQA525eW+AAAAA==
+    blockList: ''

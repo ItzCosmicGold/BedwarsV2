@@ -1,0 +1,31 @@
+Lantern:
+  system-ID: Lantern
+  displayName: '&cLantern'
+  itemGlowEffect: false
+  spawnMaterial: PIG_SPAWN_EGG
+  itemLore: []
+  creator: ff5f37d0-c1ea-4736-b6c3-ebbfdd67a810
+  placeAbleSide: TOP
+  crafting:
+    recipe: 0+0,XEX,0A0
+    disable: false
+    index:
+      '0': AIR
+      X: STICK
+      E: TORCH
+      A: OBSIDIAN
+      +: OAK_SLAB
+  projectData:
+    entities:
+      '0': H4sIAAAAAAAAAONiYOBg4HLNK8ksqQypLEhl4HYM8vUPig8OcfRzYWbgdEosTg3ISSxJZQACIN8zryyzODMpB8RnZGZg800syk4tAnG4wJKpeSX5RZVcDCwero4uHAxMmSkM/LmZeanJRYlpJVY5qWWpRYwMrM75pXkljAwMXAwcPvnJiSWZ+XlsDBwRuv5pacWpJftPPXRfJ1LDABSKggmtnAkEMxhYGVgDMkuSM0CuAUpHwqR/Fiy+zmVbwMrAHJlY7mwCkgYA5AGQOdoAAAA=
+      '1': H4sIAAAAAAAAAONiYOBg4HLNK8ksqQypLEhl4HYM8vUPig8OcfRzYWbgdEosTg3ISSxJZQACIN8zryyzODMpB8RnZGZg800syk4tAnG4wJKpeSX5RZVcDCwero4uHAxMmSkM/LmZeanJRYlpJVY5qWWpRYwMrM75pXkljAwMXAwcPvnJiSWZ+XlsDBwRuv5pacWpJfanHrqvE6lhAApFQYX2P2AAA1YG1oDMkuQMEBsoHQmT/lmw+DqXbQErA3NkYrmzCUgaAJI8tSLaAAAA
+      '2': H4sIAAAAAAAAAF2KzQ7BQBhFb1WbGjvvYcXKrlRC4qepLrCR0U7jC2ak/ZA+nQez0dKVszv3XAF4EFPNxGVc3hS6frRcR4dN7K8CG52xLFR4kaxQUflcP6ig46V2y4a7lPlZ5bWIb1SaTV4KtGdTP/DQohS9K2mV5DLjkTkWlJLUFpyJuWu2AAFvYRLJZLQLb9tfZ1mhGA3VtP+bHDghcXJq8q7Jr/egZujA3snn7/oBZcO6ft0AAAA=
+      '3': H4sIAAAAAAAAADWMTW7CMBCFXwhBwVyhV2DXFbvwI0CCgoAFsAkmTIQF2JE9UKXrnqdX4Czd9ByNEXyr996nGQHEEAPNistVWRBayWI6W6TLVfLRD9HsSkfzs2RCRdXH+qac2p99D0I0ptKeyPoiHpI0G1sK1EeDpB+jpg54uyhNmZU5d4w8pYUl566W0sK/DRD1zFVzAAjEE5NJVkY3EK/bszx3xPfvr9/hD1BN2+eEJxGiueLs6HOlN6+Lv9yzixBu5Gfv3et/1j+Ds+cAAAA=
+      '4': H4sIAAAAAAAAAONiYOBg4HLNK8ksqQypLEhl4HYM8vUPig8OcfRzYWbgdEosTg3ISSxJZQACIN8zryyzODMpB8RnZGZg800syk4tAnG4wJKpeSX5RZVcDCwero4uHAxMmSkM/LmZeanJRYlpJVY5qWWpRYwMrM75pXkljAwMXAwcPvnJiSWZ+XlsDBwRuv5pacWpJftPPXRfJ1LDABSKggk9YAADVgbWgMyS5AwQGygdCZP+WbD4OpdtASsDc2RiubMJSBoArII3SNoAAAA=
+      '5': H4sIAAAAAAAAAONiYOBg4HLNK8ksqQypLEhl4HYM8vUPig8OcfRzYWbgdEosTg3ISSxJZQACIN8zryyzODMpB8RnZGZg800syk4tAnG4wJKpeSX5RZVcDCwero4uHAxMmSkM/LmZeanJRYlpJVY5qWWpRYwMrM75pXkljAwMXAwcPvnJiSWZ+XlsDBwRuv5pacWpJfanHrqvE6lhAApFQYX2r5wJBDMYWBlYAzJLkjNArgFKR8KkfxYsvs5lW8DKwByZWO5sApIGANq/ElPaAAAA
+    blockList:
+      '0':
+        xOffset: 0.0
+        yOffset: 0.0
+        zOffset: 0.0
+        material: TORCH

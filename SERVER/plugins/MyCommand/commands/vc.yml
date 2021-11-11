@@ -1,0 +1,7 @@
+voicechat:
+   command: /vc
+   type: RUN_COMMAND
+   - runcmd: 
+   - "/tellraw @a {"text":"Click Here!!!","color":"#02FF00","clickEvent":{"action":"open_url","value":"https://drive.google.com/drive/folders/1ynhuzJgtgYDytVT3ganZ3Dte0KaFkwr6?usp=sharing"}}""
+  
+   

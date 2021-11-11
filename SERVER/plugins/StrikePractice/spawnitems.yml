@@ -1,0 +1,228 @@
+spawn-items:
+  - ==: SpawnItem
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: "\xa76\xa7lRanked Queue"
+    name: ranked
+    slot: 1
+    command: /ranked
+  - ==: SpawnItem
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: GOLD_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: "\xa7c\xa7lPremium Queue"
+    name: premiumqueue
+    slot: 2
+    command: /premiumqueue
+  - ==: SpawnItem
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: "\xa76\xa7lParty Fight"
+    name: partyfight
+    slot: 2
+    command: /party fight
+    party: true
+  - ==: SpawnItem
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SKULL_ITEM
+      damage: 3
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: "\xa7e\xa7lParty Info"
+    name: partyinfo
+    slot: 1
+    command: /party info
+    party: true
+  - ==: SpawnItem
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: PAPER
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: "\xa7a\xa7lParty Chat"
+    name: partychat
+    slot: 6
+    command: /party chat
+    party: true
+  - ==: SpawnItem
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: REDSTONE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: "\xa7c\xa7lLeave Party"
+    name: partyleave
+    slot: 7
+    command: /party leave
+    party: true
+  - ==: SpawnItem
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: REDSTONE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: "\xa7c\xa7lDisband Party"
+    name: partydisband
+    slot: 7
+    party-owner-only: true
+    command: /party disband
+    party: true
+  - ==: SpawnItem
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: WATCH
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: "\xa7e\xa7lParty Settings"
+    name: partysettings
+    slot: 8
+    party-owner-only: true
+    command: /party settings
+    party: true
+  - ==: SpawnItem
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: EYE_OF_ENDER
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: "\xa7d\xa7lCreate Party"
+    name: partycreate
+    slot: 3
+    command: /party create
+  - ==: SpawnItem
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: WATCH
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: "\xa79\xa7lSettings"
+    name: settings
+    slot: 6
+    command: /settings
+  - ==: SpawnItem
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: ANVIL
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: "\xa76\xa7lHost Events"
+    name: hostevents
+    slot: 7
+    command: /events
+  - ==: SpawnItem
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: "\xa79\xa7lKit Editor"
+    name: kiteditor
+    slot: 8
+    command: /kiteditor
+  - ==: SpawnItem
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: IRON_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: "\xa7e\xa7lUnranked Queue"
+    name: unranked
+    slot: 0
+    command: /unranked
+  - ==: SpawnItem
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: BLAZE_POWDER
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: "\xa7a\xa7lPvP Bot"
+    name: botduel
+    slot: 5
+    command: /botduel
+  - ==: SpawnItem
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: REDSTONE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: "\xa7c\xa7lLeave Queue"
+    name: leavequeue
+    slot: 8
+    queue: true
+    command: /queue leave
+  - ==: SpawnItem
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: REDSTONE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: "\xa7c\xa7lLeave 2v2 Queue"
+    name: leave2v2
+    slot: 8
+    party: true
+    queue: true
+    command: /2v2 leave
+    party-owner-only: true
+  - ==: SpawnItem
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6§l2v2 Ranked Queue
+    name: 2v2ranked
+    slot: 1
+    party: true
+    command: /2v2 ranked
+  - ==: SpawnItem
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: IRON_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §e§l2v2 Unranked Queue
+    name: 2v2unranked
+    slot: 0
+    party: true
+    command: /2v2
+  - ==: SpawnItem
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: REDSTONE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §cLeave 2v2 Queue
+    name: 2v2leave
+    slot: 8
+    command: /2v2 leave
+    party: true
+    queue: true
+    party-owner-only: true

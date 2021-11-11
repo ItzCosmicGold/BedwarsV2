@@ -1,0 +1,1141 @@
+# StrikePractice Config
+# (supports all versions 1.7+)
+# Before you report bugs please check that the bug is not caused by other plugins or your custom spigot
+# Only regular spigot and paperspigot are officially supported
+# You must have a compatible version of Citizens if you want PvP Bot and playback features!
+# Requires Java 8 or higher
+
+#
+# #
+# # Please report all bugs!
+# #
+#
+#
+#                                             #
+# ---------------------------------------------#
+# Server Settings and Misc                    #
+# ---------------------------------------------#
+#                                             #
+# The prefix in most of the messages
+prefix: '&7[&aStrikePractice&7] '
+# should the plugin notify players with "strikepractice.update" when there is an update available
+notify-updates: true
+# In seconds
+# After how many seconds should players be teleported back to the lobby after fights
+wait-before-teleport: 3
+# How many seconds players must wait before they can teleport out from ffa arenas
+# The teleport will be cancelled if the player moves or takes damage
+wait-before-leaving-ffa-arena: 10
+# After how many seconds should players be put in the spectator mode (if enabled) after they have died
+# /night, /day, /ping etc. See all with /practicecommands
+enable-practice-commands: true
+# adjust the ping if it's too high/too low
+ping-multiplier: 1
+# Cooldown between right clicking spawnitems
+spawnitem-cooldown: 500
+# Will stack the 'arenas-world' for x times if there are arenas
+# If set to 2, 'arenas-world' will be stacked 2 times (total of 3 arenas worlds)
+# Playbacks are also available on these arenas even if it wasn't the original arena
+autostack-arenas-on-enable: 2
+# Should the plugin use build arenas in the main arenas world
+# Keeping false will result in no problems with rollbacks if the server crashes
+# Only copies of the build arenas will be used
+build-fights-in-main-arenas-world: false
+# The name of the world where arenas should be located, this arena world will be stacked if enabled
+# You might still create arenas in different worlds
+arenas-world: Arenas
+# Keep a chunk ticket (if supported, MC 1.14+)
+keep-arenas-loaded: true
+# should the arenas-world be void world
+# disable if the chunk generation causes problems
+empty-arenas-world: true
+arenas-world-allow-monsters: false
+arenas-world-allow-animals: false
+# uses better settings and ignores parts of your config
+# some features are disabled or might not work that well
+# results in much better performance
+performance-mode: true
+# The default language, before the player selects other
+# You must have the language in messages.yml
+default-language: english
+# Allow clickable messages
+# Party join, fight inventories and duel accepts
+clickable-messages: true
+# The message that will be clickable
+clickable-message: '&b&c>&eClick Here&c<'
+# Simple date format
+date-format: 'dd/MM HH:mm:ss'
+# Placeholder format
+current-time-format: 'HH:mm'
+# If you want to increase or decrease the server time
+# For example if the server time displays 15:00, setting this to -2 will result in 13:00
+server-time-increase: 0
+# keep false unless you have disabled automatic chunk unloading. Otherwise this will cause lag
+keep-chunks-loaded: false
+# teleport players automatically back to lobby if they fall in void at spawn
+teleport-void-spawn: false
+# Should the player be teleported to the lobby when they join the server
+join-lobby-teleport: true
+#
+# More Similar settings in "Misc Settings" section.
+#
+#                                             #
+# ---------------------------------------------#
+# Spectating/Spectators                       #
+# ---------------------------------------------#
+#                                             #
+# Should spectating be enabled
+allow-spectating: true
+# should players spectate events (brackets (1v1 tournament) and sumo) as spectators or at /sumo setlobby and /brackets setlobby
+allow-brackets-spectating: true
+# To disable spectating for a few seconds when you die in a duel
+# no-duel-spectating: true
+# not recommended, might cause problems
+wait-before-spectator: 0
+# The teleporter item will contain all players currently fighting
+spectator-teleporter-distance: 150
+# Prevent players from flying to close to fighting players
+spectator-stay-away: false
+hide-other-spectators: false
+spectator-menu: '&aSpectate'
+# Spectator check period in ticks
+spectator-timer-period: 20
+# Use AIR to disable the item
+spectator-teleport-item: COMPASS
+spectator-teleport-name: '&aTeleporter'
+# Players can also leave spectator mode with /leave
+spectator-leave-item: RED_ROSE
+spectator-leave-name: '&cLeave Spectator Mode'
+spectator-inventory-view: true
+# If enabled, StrikePractice will not do any modifications to player inventories, for exampe, giving new items, clearing inventories etc.
+# With this setting players can bring their own stuff to fights.
+# NOTE: THIS IS STILL EXPERIMENTAL
+disable-inventory-modifications: false
+# Block commands while spectating
+spectator-block-all-commands: false
+spectator-blocked-commands:
+  - /kit
+  - /essentials:kit
+  - /examplepluginname:exampleblockedcommand
+#                                             #
+# ---------------------------------------------#
+# Kits/BattleKits                             #
+# ---------------------------------------------#
+#                                             #
+# The hit delay in combo mode
+# Default hit delay in Minecraft is 20
+combo-hit-delay: 2
+# Change this if you have a custom hit delay (19 for example)
+# NOTE: This only changes player's hit delay after combo kit and is ignored in other fights
+# therefore if you change this be sure you have other plugin or your spigot doing it everytime
+# Default hit delay in Minecraft is 20
+default-hit-delay: 20
+preview:
+  # Should the players be able to preview all kits in kit selector inventories
+  shift-click-preview: true
+  # Title of the preview kit selector inventory
+  select-kit-title: '&9Select Kit To Preview'
+  # Title of the preview inventory
+  title: '&9Kit Preview'
+  # The potion effects of the kit
+  pots: '&cEffects:'
+  potions: '&b<type> - <amplifier> - <duration> minutes'
+  # Shows if the kit is a ranked kit
+  elo-item: GOLD_INGOT
+  elo-name: '&cELO: <value>'
+  # Other things will be taken from 'custom-kit:' part
+# Kind of a custom gamemode for players
+custom-kit:
+  enabled: true
+  # The default name of the custom kit
+  default-name: '&9Custom Kit'
+  # The default icon
+  icon-material: DIAMOND_SWORD
+  # If you want players to have a premade kit set the name of the kit here
+  premade: 'premadecustomkit'
+  # Second line of the inventory
+  second-line: 'STAINED_GLASS_PANE:2'
+  # Title of the main inventory
+  main-title: '&cCustom Kit'
+  # Message sent to the player when changing the name of the custom kit
+  # <name> will be replaced with the new name of the custom kit
+  new-name: '&6New name: &r<name>'
+  # Title of the inventory where players can edit the icon of their custom kit
+  custom-kit-name: '&cCustom Kit Icon'
+  # Title of the inventory where players can edit the armor of their custom kit
+  helmets: '&cCustom Kit Helmets'
+  chestplates: '&cCustom Kit Chestplates'
+  leggings: '&cCustom Kit Leggings'
+  boots: '&cCustom Kit Boots'
+  # There will be a number (refering to the slot) after this in the title
+  item: '&cCustom Kit Item: '
+  # How air in the inventory should be displayed
+  air: '&6Air'
+  # <value> will be replaced with translation of 'yes-or-true:'  or 'no-or-false'
+  horse: '&cHorse: <value>'
+  combo: '&cCombo: <value>'
+  bow: '&cBow: <value>'
+  build: '&cBuild: <value>'
+  # The icons of each option
+  horse-item: GOLD_BARDING
+  combo-item: CLAY
+  bow-item: BOW
+  build-item: DIAMOND_PICKAXE
+  # Whether the plugin should use the items set with /customkit items or the built-in items
+  # Changes automatically when performing /customkit items
+  use-custom-items: false
+  # When giving one of these kits to a player, the custom kit of the player will be given instead
+  replaces-kits:
+    - thisKitWillBeReplacedWithThePlayersCustomKit
+#                                             #
+# ---------------------------------------------#
+# Kit Editor                                  #
+# ---------------------------------------------#
+#                                             #
+# Should the there be a kit editor item in kit selector inventories
+kit-editor-in-kit-selector: false
+# Name of the item
+kit-selector-editor-name: '&3Custom Kit Editor'
+# Material of the item
+kit-selector-editor-material: BOOK
+# Don't give books if no edited kit exists
+give-kit-automatically: true
+# Title of the kit editor selector inventory
+kit-editor-title: '&3Edit Kits'
+# Should the players be able to open the /kiteditor (to select the kit to edit) by opening an anvil
+kit-editor-anvil: false
+# The first line of the sign to save the player's kit
+kit-editor-save-sing-line-1: '[Save Kit]'
+# The first line of the sign to leave the kit editor place
+kit-editor-leave-line-1: '[Leave Editor]'
+# The first line of the sign to reset the edited kit
+kit-editor-reset-kit-line-1: '[Reset Kit]'
+# If true players will only be able to edit one version of the kit
+legacy-kit-editor: false
+# The GUI kit editor
+kit-editor:
+  # Title of the inventory
+  title: '&7Managing Kit Layout'
+  # How the kit name should be formatted
+  # <kit> is the base kit
+  # <number> is the version of the kit (1-5)
+  kit-format: '<kit> &r# &a<number>'
+  # Default layouts books name
+  # <kit> is the "base kits" name
+  default-kit: '&eDefault Kit'
+  # Items in the GUI
+  save:
+    item: ENCHANTED_BOOK
+    name: '&2Save Kit <kit>'
+    # "kit-saved" message from messages.yml
+  load:
+    item: CHEST
+    name: '&2Load Kit <kit>'
+    message: '&aKit <kit> loaded.'
+  rename:
+    item: NAME_TAG
+    name: '&2Rename Kit <kit>'
+    message: '&aPlease type the new name in the chat.'
+    # When successfully renamed
+    success: '&aKit renamed to <kit>.'
+  delete:
+    item: HOPPER
+    name: '&2Delete Kit &2<kit>'
+    message: '&aKit deleted successfully.'
+#                                             #
+# ---------------------------------------------#
+# Fighting/Fights                             #
+# ---------------------------------------------#
+#                                             #
+# The radius that system will use when it selects locations around the centre in FFA based fights
+circle-radius: 10
+bow-health: true
+# * means all kits
+# otherwise separate them with a comma, for example 'builduhc, sg'
+bow-health-kits: '*'
+# note that this might cause slight performance decrease at the moment
+# keeping the list empty will disable it completely
+# remove the # to enable the commands below
+fight-start-commands:
+# - 'setkb <player> <raw_kit>'
+# - 'example console command'
+# - 'player command: /example player command'
+fight-end-commands:
+# - 'example console command'
+# - 'player command: /example player command'
+# The build limit with build kits
+# Calculated from the center of the arena
+build-limit: 25
+winner-commands:
+  # Most placeholders should work in these commands (e.g <raw_kit>, <kit>)
+  # use <player> for the player name (also <opponent>)
+  ranked:
+  #    - 'pay <player> 20'
+  unranked:
+#    - 'pay <player> 5'
+  bot-duel: []
+  party-split: []
+  party-ffa: []
+  party-bots: []
+  party-vs-party: []
+# The prefix of the team1
+# Own team
+team1-prefix: '&a'
+# The prefix of the team2
+# Enemy team
+team2-prefix: '&c'
+# Name of the item in many inventories that will go back to previous inventory or close the current inventory
+back-button-name: '&cBack'
+# The message to preview the custom kit someone has requested a fight with the player or their party
+preview-custom-kit: '&6Click here to preview the custom kit'
+# Players will die instantly when their y level is under 0 if they are fighting
+# Good for skywars and spleef
+insta-void: true
+# Enable at your own risk
+insta-void-async: false
+# In minutes
+ffa-reset-delay: 30
+# Whether the player will be teleported to the lobby or rejoin the ffa when they die
+ffa-rejoin-automatically: true
+rematch-item:
+  # Whether players should get a rematch spawnitem
+  enabled: true
+  # after how many seconds should the spawnitem be removed
+  remove-after: 10
+  # the slot (0-8)
+  slot: 8
+  # the item
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa7d\xa7lRematch <opponent>"
+match:
+  # Should the plugin block all commands while in a fight
+  block-all-commands: false
+  # Otherwise this will help you
+  blocked-commands:
+    - /kit
+    - /essentials:kit
+    - /exampleblockedcommand
+    - /examplepluginname:exampleblockedcommand
+# In seconds
+# Used in all types of fights
+countdown-time: 4
+# 0 for the "go", -1 to disable
+ffa-countdown: 0
+# "false" for no sounds
+# For example like this:
+# Countdown-sound: false
+countdown-sound: NOTE_PLING
+countdown-inventory-update: true
+match-start-sound: LEVEL_UP
+# in minutes
+fight-duration-limit: 20
+# Title of the inventory
+playback-gui-title: '&bPlayback matches'
+# Title of the kit selector inventory
+inventory-title: '&bSelect Kit'
+map-selector:
+  enabled: true
+  title: '&bSelect Map'
+  random-map-button:
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOL
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: "\xa79\xa7lRandom Map"
+#
+# Replay Stuff
+#
+# In seconds
+# The maximum time of match recording, avoid players from creating too big playback files
+max-recording-time: 600
+# Should the plugin record all fights (includes ranked and unranked duels)
+record-all-fights: true
+# Should the plugin record only ranked duels
+record-elo-fights: true
+# If true and the match was recorded, 'kill-cam' message will be sent to the players after the duel
+kill-cam: false
+playback-bot-name: '[Replay]<player>'
+# After how many days should the plugin remove the recorded playback
+# For example, set to 0.5 for 12 hours
+remove-record-after: 7.0
+#                                             #
+# ---------------------------------------------#
+# Queues                                      #
+# ---------------------------------------------#
+#                                             #
+# Title of the unranked inventory or queue inventory if separate-queues is false
+queue-inventory-title: '&3Queue'
+ranked-queue-inventory-title: '&3Ranked Queue'
+premium-queue-inventory-title: '&cPremium Queue'
+2v2-ranked-queue-inventory-title: '&3Ranked 2v2 Queue'
+2v2-queue-inventory-title: '&32v2 Queue'
+
+premium-permission-message: '&cYou do not have access to the premium queue'
+# Name of the item you use to quit queue
+quit-item-name: '&c&LLeave current queue.'
+# Enable or disable the leave queue item in the queue inventories
+leave-queue-item: false
+# Should unranked and ranked be in separate inventories
+separate-queues: true
+# Max allowed ping while joining ranked queue
+max-ranked-queue-ping: 500
+limit-rankeds: true
+limit-unrankeds: false
+rankeds-per-day: 20
+unrankeds-per-day: 50
+unlimited: 'unlimited'
+# Enable cooldown between fights
+queue-cooldown: false
+# In seconds
+queue-cooldown-time: 10
+# Enable cooldown between ranked fights
+elo-queue-cooldown: false
+# In seconds
+elo-queue-cooldown-time: 20
+# Just to make it less spammy
+# Cooldown between duel invites
+# In milli seconds
+request-cooldown: 5000
+# Maximum changes of blocks per tick (delay) per arena
+max-block-changes-per-tick-per-arena: 10
+# By default a fight has a block limit of 2000 + (numberOfPlayers * 250) (roughtly)
+# If you want to bypass it, set a custom limit below. All block changes count.
+# max-block-changes: 20000
+experimental-block-updater: true
+# Displayed in items of the queue inventory/inventories
+in-queue: '&dPlayers In Queue: &e<players>'
+# <wins_kit> <losses_kit> require SQL database and may increase database load on big servers
+in-match: '&dPlayers Fighting: &e<players>\n \n&dMatches won: &e<wins_<raw_kit>>\n&dMatches lost: &e<losses_<raw_kit>>'
+change-icon-amount: true
+ranked:
+  # How many kills the player must have before they can join ranked queue
+  kills-required: 10
+  # After how many seconds should the range be increased
+  elo-range-time: 5
+  # How much should the range be increased each time
+  elo-range-increase: 50
+  # After how many seconds should the player be able to fight with anyone in this state
+  anyone-after: 60
+#                                             #
+# ---------------------------------------------#
+# Post Match Inventory Preview                #
+# ---------------------------------------------#
+#                                             #
+fight-inventory:
+  rows: 6
+  # Where the plugin should start showing the inventory contents
+  item-start-slot: 1
+  # Where the plugin should display the helmet item
+  helmet-slot: 36
+  # Same for chestplate
+  chestplate-slot: 37
+  # Same for leggings
+  leggings-slot: 38
+  # Same for boots
+  boots-slot: 39
+  # The player's food level
+  food-slot: 48
+  playback-slot: 46
+  # The player's health
+  health-slot: 47
+  # The player's potion effects
+  pots-slot: 50
+  # The number of health potions left
+  pots-left-slot: 49
+  # <food> will be replaced with the player's food level
+  food: '&6Food: <food>/20'
+  # <health> will be replaced with the player's health
+  health: '&6Health: <health>/20'
+  # If the player was dead, this will be displayed in their 'health' item
+  dead: '&cDead'
+  # Name of the effect item
+  effect-displayname: '&7Potion Effects'
+  # First line of the lore
+  pots: '&3Type - Amplifier - Duration'
+  # How the effects should be displayed
+  # <type> will be replaced with the potion effect type
+  # <amplifier> will be replaced with the amplifier of the potion effect
+  # <duration> will be replaced with the duration left of the potion effect
+  effect: '&b<type> <amplifier> (<duration> minutes)'
+  # Title of the inventory
+  inventory: '&7<player>''s inventory'
+  # The number of health potions left
+  pots-left: '&cHealth Potions Left: <potions>'
+  match-stats-lore:
+    - '&dHits: &e<hits>'
+    - '&dLongest combo: &e<combo>'
+    - '&dPotions Thrown: &e<potions_thrown>'
+    - '&dPotions Missed: &e<potions_missed>'
+    - '&dHealing Accuracy: &e<potion_accuracy>'
+  soups-left: '&cSoups Left: &e<soups>'
+  next-inventory-name: '&dShow <player>''s inventory'
+  next-inventory-slot: 53
+  next-inventory-item: PAPER
+spectator-inventory-messages: true
+inventory-message-your: '&6Your team: '
+inventory-message-opponent: '&6Opponent team: '
+winner-inventories: '&aWinner inventories:'
+loser-inventories: '&cLoser inventories:'
+# - '&7&m----------------------------'
+# - '&6&lClick for inventories'
+# - '&aWinner: &f<winner>&7[&e<winner_pots>&7]'
+# - '&cLoser: &f<loser>&7[&e<loser_pots>&7]'
+# - '&7&m----------------------------'
+#  OR
+#  - '&eClick for inventories'
+#  - '&aWinner: <winner>&7[&e<winner_pots>&7] - &cLoser: <loser>[&e<loser_pots>&7]'
+#
+fight-inventory-message:
+  - '&7&m----------------------------'
+  - '&6&lClick for inventories'
+  - '&aWinner: &f<winner>&7[&e<winner_pots>&7]'
+  - '&cLoser: &f<loser>&7[&e<loser_pots>&7]'
+  - '&7&m----------------------------'
+fight-inventory-player: '&e<player>'
+# Used when sending multiple clickable inventories
+inventory-separator: '&e, '
+#                                             #
+# ---------------------------------------------#
+#  PvP Bot                                    #
+# ---------------------------------------------#
+#                                             #
+# The pvp bot's maximum attack range
+bot-fast-potions: true
+enable-bot-pearling: true
+# Bot's attack range
+# Enable this if the bot causes any errors or bugs
+# Enabling will slightly decrease the performance
+main-thread-bot: false
+# If disabled players will take only 0.5 hearts damage
+# This option is just in case it doesn't work like it should
+fix-bot-damage: true
+# Enable this if the bot doesn't take knockback with your spigot
+# Will help with some custom spigots
+# Also helps if the kb is weird
+fix-bot-kb: true
+# Horizontal knockback
+bot-kb-amount: 0.27
+# Vertical knockback
+# max
+bot-kb-amount-upward: 0.38
+bot-kb-amount-upward-min: 0.27
+# How the pvp bot should be named, <player> will be replaced with the player's name
+bot-name: 'BOT_<player>'
+# setting this false is NOT recommended because it might and most likely will cause bugs
+always-same-skin: true
+bot-skin: steve
+bot-teleport-error-fix: true
+bot-difficulty:
+  # Title of the difficulty selector
+  title: '&aBot Difficulty'
+  # Size of the difficulty selector
+  # Icons will be in the middle of this inventory
+  inventory-size: 9
+  easy:
+    reach: 2.8
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: STAINED_GLASS_PANE
+      damage: 5
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: "§a§lEasy"
+        lore:
+          - "§eReach: §a2.7"
+  normal:
+    # The attack range works differently and does not correspond to real player reach (or at least does not look like it)
+    # Therefore we lie in the item lore.
+    # You can also lie about the bot CPS
+    reach: 3.9
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: STAINED_GLASS_PANE
+      damage: 4
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: "§a§lNormal"
+        lore:
+          - "§eReach: §a3"
+  hard:
+    reach: 5.6
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: STAINED_GLASS_PANE
+      damage: 1
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: "§a§lHard"
+        lore:
+          - "§eReach: §a3.2"
+  hacker:
+    reach: 6
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      type: STAINED_GLASS_PANE
+      damage: 14
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: "§a§lHacker"
+        lore:
+          - "§eReach §a4.3"
+#                                             #
+# ---------------------------------------------#
+#  Player Settings                            #
+# ---------------------------------------------#
+#                                             #
+# Be sure you have set /sprac spawncorner1 and /sprac spawncorner2
+# One up and the other down in the opposite corner
+player-spawn-hider:
+  # If enabled here and in player settings, players inside this region will be hidden
+  enabled: false
+player-settings:
+  inventory-size: 27
+  title: '&a&lSettings'
+  language-item: PAPER
+  language-name: '&eChange Language'
+  language-slot: 14
+  duel-requests-item: BLAZE_ROD
+  duel-requests-name: '&eDuel Settings'
+  duel-requests-slot: 12
+  scoreboard-item: BOOK
+  scoreboard-name: '&eToggle Scoreboard'
+  scoreboard-slot: 10
+  hide-players-item: SLIME_BALL
+  hide-players-name: '&eToggle Player Hider'
+  hide-players-slot: 16
+  # Default values for each setting
+  default-values:
+    scoreboard-disabled: false
+    hide-players: false
+    duel-requests-disabled: false
+    admin-scoreboard: false
+admin-scoreboard-color1: '&6'
+admin-scoreboard-color2: '&e'
+language:
+  # Will use the players's Minecraft language if translations are available
+  automatic-language: true
+  # Title of the inventory
+  title: '&3Select your language'
+  # Current language item
+  your-language-item: WOOL
+  # Current language name
+  your-language: '&b&lYour language: <language>'
+  # Size of the inventory
+  inv-size: 18
+# Should the /duel (without any arguments) open the duel inventory
+duel-inventory: true
+# The title of the inventory
+duel-inventory-title: '&3Duel'
+# Name of the duel item
+duel-inventory-duel: '&3Duel a Player'
+# Name of the pending requests item
+duel-inventory-pending: '&3Pending Duel Requests'
+# Name of the item when the player has disabled duel requests
+duel-inventory-toggle-disabled: '&3Toggle Duel Requests (disabled)'
+# Name of the item when the player has enabled duel requests
+duel-inventory-toggle-enabled: '&3Toggle Duel Requests (enabled)'
+#                                             #
+# ---------------------------------------------#
+# Misc Settings - Enable/Disable features     #
+# Things that don't have own categories       #
+# ---------------------------------------------#
+#                                             #
+#
+# Default settings are pretty good
+#
+# Should colored name tags in team fights be enabled (for example, party split, party vs party and koth)
+enable-colored-names: true
+# Whether leather armor is always colored red/blue
+any-kit-colored-armor: true
+# Should the plugin roll back the arenas if the server has crashed or was stopped while players were fighting
+# THIS WILL ROLL BACK ALL BLOCKS THAT COULD BE PLACED WITH THE KIT'S INVENTORY,
+# NOT ONLY THE ACTUALLY PLACED BLOCKS
+# For example if the kit has cobblestone every single cobblestone between corner1 and corner2 will be set
+rollback-on-enable-if-crashed: false
+# Should the plugin prevent grass from spreading
+disable-grass-spread: true
+# Should the plugin prevent crafting during fights
+disable-crafting-in-fight: true
+no-hunger-in-lobby: true
+# Should the plugin prevent raining
+anti-rain: true
+# Should the plugin prevent fire spread
+anti-fire: true
+# A simple fix for some enderpearl glitches
+# Try other pearl fix plugins if this doesn't help
+enderpearl-fix: true
+# Should the plugin prevent lava and water generating cobblestone
+anti-lava-generator: false
+# Should the plugin remove arrows when they land.
+remove-arrows: true
+# Should the plugin give extra effects if a player eats golden apple which name contains
+# "golden head" or "goldenhead" (case insensitive)
+golden-heads: true
+# Should players type searches in chat or in fake signs
+# Might not work for 1.9+ players
+enable-sign-search: false
+golden-head-effects:
+  - ==: PotionEffect
+    effect: 22
+    duration: 1800
+    amplifier: 0
+    ambient: true
+  - ==: PotionEffect
+    effect: 10
+    duration: 180
+    amplifier: 1
+    ambient: true
+disable-spawn-damage: true
+# Should the plugin prevent building when the player is not in a build fight
+# Admins can still build in creative gamemode
+disable-building-without-build-kit: true
+# If true players can't build outside the arenas
+# Only applies to arenas that have corners and when the player is in a fight
+disable-building-outside-arenas: false
+# If the name of the kit contains "uhc" it will disable health regeneration
+disable-regen-with-uhc-kits: true
+# Should the plugin prevent players from dropping items when they are not fighting
+prevent-item-dropping: true
+# Prevent dropping swords/bows/shovels and other tools in fights
+prevent-tool-dropping: true
+# Should the plugin remove all item drops on startup
+remove-all-drops-on-startup: true
+# If enabled, soup will heal 3.5 hearts
+insta-soup: true
+remove-bottles: true
+# In seconds
+# How long time should items be on the ground when dropped
+# Will only affect deaths and drop events that happen in matches and pvp events
+remove-drops: 3
+death:
+  # If enabled, the death message will be disabled
+  disable-message: true
+  # Display a lightning for nearby players when someone dies
+  lightning: true
+  # Will fix some other plugins causing problems
+  # Disable if you get errors about this with your spigot
+  disable-keep-inventory: true
+  respawn: true
+economy:
+  enabled: false
+  # Give money for killing
+  kill-give: false
+  # The amount
+  kill-amount: 10
+  # Withdraw money when the player dies
+  death-withdraw: false
+  # The amount
+  withdraw-amount: 5
+# Players start taking damage if they exit the region inside corner1 and corner2
+# Slight performance decrease if enabled
+storm-wall-outside-arenas: false
+#                                             #
+# ---------------------------------------------#
+#  EnderPearl Cooldown                        #
+# ---------------------------------------------#
+#                                             #
+enderpearl-cooldown:
+  enabled: true
+  # Cooldown in seconds
+  cooldown: 10
+  # The format for cooldown
+  format: '0'
+  # How often the name will be updated
+  # in ticks
+  interval: 2
+  # The name of the held enderpearl when the player is on cooldown
+  # Use <time> for the time left
+  pearl-name: '&bCooldown: &c<time> seconds'
+# Check scoreboard section for enderpearl scoreboard lines
+#                                             #
+# ---------------------------------------------#
+#  Database                                   #
+# ---------------------------------------------#
+#
+# NOTE: on old MC servers (1.7-1.8) you probably want to use MySQL/MariaDB 5.7.x not 8+
+#
+database:
+  # Do you want to save stats in SQL database or save them in per player files
+  mysql: false
+  host: localhost
+  port: 3306
+  user: practice
+  password: strikepracticeisbest
+  # Database name. If you need any extra parameters you can try putting them after this (e.g. "name: strikepractice?someParam=value")
+  name: strikepractice
+# If all fights (including elo) should be saved to mysql 'fights' table
+save-all-fights: false
+# If only elo fights should be saved
+save-elo-fights: false
+# Enable this if you're using the older version of strike-web addon
+# wins/losses won't work if this is enabled
+legacy-fight-format: true
+match-link-after-fight: true
+# <started> <ended>, system time when the fight started/ended
+match-link: '&9Match link: https://demo.legendeffects.co.uk/StrikePractice-Web'
+# Enable if you want to use top placeholders without mysql
+# disable for slighly better performance if you use flatfile and don't need top placeholders
+top-placeholders-require-mysql: false
+#                                             #
+# ---------------------------------------------#
+# Statistics                                  #
+# ---------------------------------------------#
+#                                             #
+# How often should online players' stats be saved to avoid server crash resetting them, in seconds
+player-stats-auto-save-period: 600
+# Default starting elo
+# In case you are using MySQL and changing this after you have already made the kits you might need to recreate the columns
+starting-elo: 1000
+# If this is false global elo is average elo of all kits. If it's true global elo is average elo of kits with different elo than the starting-elo
+global-elo-ignore-starting-elo: false
+# Which stats should be displayed when using the command /stats
+show-stats:
+  deaths: true
+  kills: true
+  elo: true
+  party-wins: true
+  lms: true
+  brackets: true
+  global-elo: true
+sign-stats:
+  # First line must be this
+  # Just lines displaying particular statistic
+  # I think it's quite easy to understand
+  line-1: '&3[&4Stats&3 ]'
+  line-2: '&4Click me!'
+  # <player> will be replaced with the name of the player whose stats are displayed
+  player-line: '&5<player>'
+  brackets-line: '&5Brackets Wins'
+  kills-line: '&5Kills'
+  deaths-line: '&5Deaths'
+  lms-line: '&5LMS Wins'
+  party-wins-line: '&5Party Wins'
+  elo-line: '&5<kit> Elo'
+  global-elo-line: '&5Global Elo'
+  # The value (for example number of kills)
+  value: '&3<value>'
+#                                             #
+# ---------------------------------------------#
+# Knockback Settings (optional)               #
+# ---------------------------------------------#
+#                                             #
+knockback:
+  # set true to enable knockback modification
+  # if this is false strikepractice doesn't do anything to knockback and hit detection
+  enabled: false
+  # if true, knockback is only modified if the player is playing a combo kit
+  only-combo: false
+  # you can copy and add -max (for example air-horizontal-max: 0.98) for randomization
+  # probably very bad kb, just guessed some values
+  default:
+    air-horizontal: 0.93
+    air-vertical: 0.93
+    horizontal: 0.82
+    vertical: 0.88
+    # examples for randomization
+    # air-horizontal-max: 1.01
+    # air-vertical-max: 1.0
+    # horizontal-max: 0.91
+    # vertical-max: 0.98
+  # in combo kits
+  combo:
+    air-horizontal: 0.82
+    air-vertical: 0.82
+    horizontal: 0.75
+    vertical: 0.78
+    # for "sumo" kit
+    #sumo:
+    #air-horizontal: 1
+    #air-vertical: 1
+    #horizontal: 0.95
+    #vertical: 0.97
+#                                             #
+# ---------------------------------------------#
+# Elo Rewards and Elo Ranks                   #
+# ---------------------------------------------#
+#                                             #
+# players may get rewarded more than once for the same level
+elo-rewards:
+  # rank name
+  example_level:
+    # required elo
+    elo: 1200
+    # commands to run
+    commands:
+      # <player> means the player's name and <level> the level's name ('example_level')
+      - 'examplecommand <player> <level>'
+elo-ranks:
+  enabled: true
+  # set true if the rank message should be sent everytime, set false if only when the player's rank changes
+  send-everytime: false
+  # calculated based on the player's global elo
+  # elo ranges shall not overlap
+  ranks:
+    silver1:
+      name: '&7Silver I'
+      elo-range: '0-900'
+    silver2:
+      name: '&7Silver II'
+      elo-range: '901-930'
+    silver3:
+      name: '&7Silver III'
+      elo-range: '931-950'
+    silver4:
+      name: '&7Silver IV'
+      elo-range: '951-980'
+    silver5:
+      name: '&7Silver V'
+      elo-range: '981-1000'
+    gold1:
+      name: '&6Gold I'
+      elo-range: '1001-1010'
+    gold2:
+      name: '&6Gold II'
+      elo-range: '1011-1020'
+    gold3:
+      name: '&6Gold III'
+      elo-range: '1021-1035'
+    gold4:
+      name: '&6Gold IV'
+      elo-range: '1036-1050'
+    emerald1:
+      name: '&aEmerald I'
+      elo-range: '1051-1100'
+    emerald2:
+      name: '&aEmerald II'
+      elo-range: '1101-1150'
+    emerald3:
+      name: '&aEmerald III'
+      elo-range: '1151-1200'
+    diamond:
+      name: '&bDiamond'
+      elo-range: '1201-9999'
+#                                             #
+# ---------------------------------------------#
+# Party stuff                                 #
+# ---------------------------------------------#
+#                                             #
+#
+# This part of the config looks ugly, I know
+#
+party:
+  info-command:
+    - '&6Party Leader: &e<owner>'
+    - '&6Members [<size>]: &e<members>'
+  settings:
+    player-limit: '&6Player Limit: &e<value>'
+    open-party:
+      enabled: '&6Party Is Now Open'
+      disabled: '&6Click To Open Your Party'
+    public-party:
+      enabled: '&6Party Is Now Public & Broadcasting'
+      disabled: '&6Click To Open & Broadcast Your Party'
+  # How other parties should be displayed in the inventory
+  in-match-party: '&c<name>''s party (in a fight)'
+  not-in-match-party: '&e<name>''s party (not fighting)'
+  your-party: '&6Your party'
+  # Allow hitting team mates with a rod
+  allow-rod-boosting: false
+  # lore in /party fight inventory items
+  # leave null for no members list
+  member: '&e<name>'
+  show-members-limit: 9
+  # <more_members> will always be greater than 1, otherwise 'member:' will be used
+  show-members-limit-reached: '&e&lAnd <more_members> members more.'
+  # Title of the inventory
+  inventory-title: '&3Party Fights'
+  party-ffa-enabled: true
+  # The item to start a party ffa
+  ffa-item: DIAMOND
+  # Name of the item
+  ffa-item-name: '&bParty FFA'
+  # Lore of the item
+  ffa-item-lore:
+    - '&8Fight against other players in your party'
+  # The slot in the inventory
+  # Between 0-53
+  ffa-item-slot: 48
+  # Same for party split
+  party-split-enabled: true
+  split-item: DIAMOND_SWORD
+  split-item-name: '&bSplit Party'
+  split-item-lore:
+    - '&8Splits your party into two teams'
+    - '&8Fight against other players in your party'
+  split-item-slot: 49
+  # Same for party playbacks
+  party-playback-enabled: true
+  party-playback-item: PAPER
+  party-playback-item-name: '&bParty Playback'
+  party-playback-item-lore:
+    - '&8Replay matches with your party'
+  party-playback-item-slot: 50
+  # Same for party vs bots
+  party-vs-bots-enabled: true
+  party-vs-bots-item: SKULL_ITEM
+  party-vs-bots-item-name: '&bParty Vs Bots'
+  party-vs-bots-item-lore:
+    - '&8Fight against the bots'
+  party-vs-bots-item-slot: 51
+  # Party chat format
+  # <player> = player's name
+  # <meesage> = the message
+  chat-format: '&5<player>: &b<message>'
+  # Players can send party messages if they put this before the message
+  # e.g. @Let's play some party vs bots!
+  player-chat-prefix: '@'
+  # How much should creating a party cost
+  create:
+    costs: false
+    amount: 20
+# Title of the inventory
+party-settings-title: '&6Party Settings'
+# Default number of maximum players in a party
+max-party-members: 10
+# How often (in seconds) should the public party message be sent
+public-party-broadcast-time: 15
+# Cooldown between party invites
+# In milli seconds
+party-invite-cooldown: 3000
+#                                             #
+# ---------------------------------------------#
+#  PvP Events - Tournament/Brackets, Koth,    #
+#  Juggernaut, Sumo, LMS/Last Man Standing    #
+# ---------------------------------------------#
+#                                             #
+# strikepractice.cooldownbypass will bypass these cooldowns
+# in minutes, per user
+cooldowns:
+  hostevent:
+    brackets: 90
+    sumo: 60
+    lms: 90
+    koth: 120
+    juggernaut: 120
+events-gui:
+  title: '&cEvents'
+  size: 27
+  items:
+    - ==: GUIItem
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        type: INK_SACK
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: "\xa7a\xa7lHost Sumo Event"
+          lore:
+            - "\xa76Click to host a sumo event"
+            - "\xa7cCooldown: <cooldown_sumo> [display=<is_cooldown_sumo>]"
+      slot: 10
+      command: /hostevent sumo
+    - ==: GUIItem
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        type: POTION
+        damage: 34
+        meta:
+          ==: ItemMeta
+          meta-type: POTION
+          display-name: "\xa7a\xa7lHost Brackets Event"
+          lore:
+            - "\xa76Click to host a 1v1 tournament event"
+            - "\xa7cCooldown: <cooldown_brackets> [display=<is_cooldown_brackets>]"
+      slot: 12
+      command: /hostevent brackets
+    - ==: GUIItem
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        type: DIAMOND_SWORD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: "\xa7a\xa7lHost Last Man Standing Event"
+          lore:
+            - "\xa76Click to host a LMS event"
+            - "\xa7cCooldown: <cooldown_lms> [display=<is_cooldown_lms>]"
+      slot: 14
+      command: /hostevent lms
+    - ==: GUIItem
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        type: GOLD_SWORD
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: "\xa7a\xa7lHost King of The Hill Event"
+          lore:
+            - "\xa76Click to host a KOTH event"
+            - "\xa7cCooldown: <cooldown_koth> [display=<is_cooldown_koth>]"
+      slot: 16
+      command: /hostevent koth
+automatic-events:
+  broadcast:
+    # How often should the message be sent
+    delay: 10
+    # How many times should the message be sent
+    times: 5
+    # The messages for all events
+    lms: '&c&l<host> is hosting a <kit>&c&l LMS event! Click to join!'
+    brackets: '&c&l<host> is hosting a <kit>&c&l 1v1 tournament event! Click to join!'
+    sumo: '&c&l<host> is hosting a sumo event! Click to join!'
+    juggernaut: '&c&l<host> is hosting a juggernaut event! Click to join!'
+    koth: '&c&l<host> is hosting a KOTH event! Click to join!'
+  # Default kits when hosting automatically
+  juggernaut-kit: gapple
+  juggernaut-player-kit: nodebuff
+  koth-kit: nodebuff
+  lms-kit: nodebuff
+  brackets-kit: nodebuff
+  sumo-kit: sumo
+  times:
+    # Format like this: time:lms (for example 15:30:lms)
+    # LMS, koth, brackets, juggernaut, sumo
+    - '25:30:lms' # Just an example, 25 so it never actually hosts it
+brackets:
+  allow-spectating: true
+  # The command will be executed when a player wins the event
+  # <player> will be replaced with the name of the player
+  winner-cmd: eco give <player> 100
+  # Start the event automatically when the number of players join
+  auto-start: 15
+  # After how many seconds should the event be started automatically
+  auto-start-after-seconds: 10
+sumo:
+  allow-spectating: true
+  # The command will be executed when a player wins the event
+  # <player> will be replaced with the name of the player
+  winner-cmd: eco give <player> 100
+  # Start the event automatically when the number of players join
+  auto-start: 15
+  # After how many seconds should the event be started automatically
+  auto-start-after-seconds: 10
+koth:
+  # Should the players be able to join or rejoin the event at any time
+  anytime-join: true
+  respawn: true
+  auto-respawn: true
+  # Team names
+  team1: '&a&lTeam Green'
+  team2: '&c&lTeam Red'
+  # How many seconds should the capping time be
+  timer: 300
+# Enderpearl cooldown on clients
+client-cooldowns:
+  # Lunar client
+  lunar: true
+  # Download BadlionClientTimerAPI to support cooldowns for BAC
+  # https://github.com/BadlionNetwork/BadlionClientTimerAPI/releases
+  badlion: true
+# DO NOT CHANGE
+version: 3.0.0

@@ -1,0 +1,22 @@
+WaxCandle:
+  system-ID: WaxCandle
+  displayName: '&cWaxCandle'
+  itemGlowEffect: false
+  spawnMaterial: PIG_SPAWN_EGG
+  itemLore: []
+  creator: ff5f37d0-c1ea-4736-b6c3-ebbfdd67a810
+  placeAbleSide: TOP
+  crafting:
+    recipe: xxx,xxx,xxx
+    disable: true
+    index:
+      x: BEDROCK
+  projectData:
+    entities:
+      '0': H4sIAAAAAAAAAF2Rz26bQBDGJ3UcEXrOG/SKhPkb5+Yat17LQGKDMVyiBdb24gUsvCTePFXfoK/VY3DkSFHnNN/3m0+a0cgAEsiTilMuAnEg8H20cP3F8zIYeU4PblH1Qo80ZQQArnpw4+JmT5qzkD8gqXjdCBmup5ORI8E3msNdSSuSNXjDHw4MC9I87wjOr6A/rtuKd7kex1sZ5OW+Zcx/rUjT5VAOP0xDNzSbWIptqbpiDM1UGdqmpqT3hpXdD+wUW6TLPTb1gTSckuMtSJyceNuQo3xeSYL+CrOWwB8iZmqy3qn5esYygaxOB0uV+ag42KhaiXSMLFR2fDqy5mL4ZdbkODJZrM92SfXUpuVKnesLRqaLQVaGL97b9uQWSPOKUEucrfACZLoROiVOzjwn1OIiU5PI28daKHwn1t1iovlBrLpRx97cQVz8Ym7hUT9Cqusg3fsd0s16MDx/4drDJQE5meY/kf4k8rY7CWSQ5nWGOa2rG5DWir/ZHAmHS3VW8p/Vh/4j5dnuguML/vvvE/di/Do2zv07p0jyQfwBAAA=
+    blockList:
+      '0':
+        xOffset: 0.0
+        yOffset: 0.0
+        zOffset: 0.0
+        material: TORCH

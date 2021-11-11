@@ -1,0 +1,56 @@
+inventory:
+  armor:
+  - null
+  - null
+  - null
+  - null
+  content:
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: FILLED_MAP
+    meta:
+      ==: ItemMeta
+      meta-type: MAP
+      display-name: '{"extra":[{"text":"Captcha [Enter In Chat]"}],"text":""}'
+      Damage: 13
+      map-id: 13
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null

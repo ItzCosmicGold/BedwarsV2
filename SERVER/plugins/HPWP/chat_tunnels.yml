@@ -1,0 +1,19 @@
+add_formatting: false
+chat_tunnels:
+- format: '&r&f[&bTunnel 1&r&f] '
+  id: tunnel-1
+- format: '&r&f[&bTunnel 2&r&f] '
+  id: tunnel-2
+- format: '&r&f[&bTunnel 3&r&f] '
+  id: tunnel-3
+- format: '&r&f[&bTunnel 4&r&f] '
+  id: tunnel-4
+- format: '&r&f[&bTunnel 5&r&f] '
+  id: tunnel-5
+- format: '&r&f[&bTunnel 6&r&f] '
+  id: tunnel-6
+- format: '&r&f[&bTunnel 7&r&f] '
+  id: tunnel-7
+- format: '&r&f[&bTunnel 8&r&f] '
+  id: tunnel-8
+enabled: false

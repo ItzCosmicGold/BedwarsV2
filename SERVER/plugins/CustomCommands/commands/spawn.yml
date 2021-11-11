@@ -1,0 +1,28 @@
+# ----------------------------------------------------------------------------------------------------
+# Configuration file for CustomCommands
+# More information can be found in the documentation
+# ----------------------------------------------------------------------------------------------------
+
+# Aliases for the command
+# Our command can be used with /spawn, /gotospawn and /lobby
+aliases: [spawn, gotospawn, lobby]
+
+# Patterns for the command
+patterns:
+
+  - pattern: ''  # here, we don't need arguments for the command, so we set only one empty pattern
+    description: go to the spawn
+    permission: myserver.permission.spawn
+    worlds:
+      whitelist: [world]  # our command can only be used in the default world
+      blacklist: []
+    cooldown: 15 SECOND
+    actions:
+      - type: TELEPORT
+        location: world,0,64,0
+      - type: NOTIFY
+        notify:
+          message: '&aYou are now at spawn.'
+          sound: ENTITY_PLAYER_LEVELUP
+          actionbar: '&7Thanks for using the /spawn command.'
+          actionbar_duration: 3 SECOND

@@ -1,0 +1,66 @@
+# -------------------- Custom commands --------------------
+
+descriptionCustomCommandAliases: |
+  &7Les noms de cette commande
+
+descriptionCustomCommandPatterns: |
+  &7Les différents patterns possibles pour cette commande
+
+descriptionCustomCommandPatternPattern: |
+  &7Le pattern pour cette commande
+  &7Voir la documentation pour des explications à ce propos
+
+descriptionCustomCommandPatternDescription: |
+  &7La description de ce pattern, une explication de ce qu'il est supposé faire
+
+descriptionCustomCommandPatternPermission: |
+  &7La permission requise pour utiliser ce pattern
+
+descriptionCustomCommandPatternPermissionErrorMessage: |
+  &7Un message d'erreur de permission
+
+descriptionCustomCommandPatternWorlds: |
+  &7La restriction de mondes pour l'utilisation de cette commande
+
+descriptionCustomCommandPatternCooldown: |
+  &7Le temps à attendre avant de réutiliser cette commande à nouveau
+
+descriptionCustomCommandPatternToggleMode: |
+  &7Si activé, ceci fera en sorte qu'une exécution sur deux soit considérée comme l'activation et les autres la désactivation
+  &7Les actions avec &6on_toggle_on &7seront exécutées en activant, et les actions sans seront exécutées en désactivant
+
+descriptionCustomCommandPatternActions: |
+  &7Les actions exécutées en utilisant ce pattern
+
+# -------------------- Actions --------------------
+
+descriptionActionOnToggleOn: |
+  &7Si le pattern qui contient cette action est en mode toggle, ceci décide quand exécuter cette action (en activant ou désactivant)
+
+descriptionActionType: |
+  &7Le type d'action à exécuter
+
+descriptionActionTypeTarget: |
+  &7La cible pour laquelle exécuter cette commande
+  &7Vous pouvez utiliser des placeholders ou &eeveryone &7pour viser tous les joueurs connectés
+
+descriptionActionChangeGamemodeGamemode: |
+  &7Le nouveau mode de jeu
+
+descriptionActionExecuteCommmandsCommands: |
+  &7Les commandes à exécuter
+
+descriptionActionExecuteCommmandsAsPlayer: |
+  &7True si les commandes doivent être exécutées à la place du joueur
+
+descriptionActionGiveItemItem: |
+  &7L'item à donner au joueur
+
+descriptionActionNotifyNotify: |
+  &7La notification à envoyer au joueur
+
+descriptionActionTeleportLocation: |
+  &7L'endroit où téléporter le joueur
+
+descriptionActionWaitDuration: |
+  &7Le temps à attendre pour cette action

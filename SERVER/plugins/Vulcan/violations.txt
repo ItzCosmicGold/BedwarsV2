@@ -1,0 +1,5 @@
+[11-11-2021] [14:36:58] Best1111 failed Kill Aura (Type A) [VL: 2] [Ping: 30] [TPS: 20] [Version: 1.16.4] delay=41
+[11-11-2021] [14:37:20] Best1111 failed Kill Aura (Type A) [VL: 3] [Ping: 27] [TPS: 20] [Version: 1.16.4] delay=51
+[11-11-2021] [14:37:22] Best1111 failed Kill Aura (Type A) [VL: 4] [Ping: 27] [TPS: 20] [Version: 1.16.4] delay=47
+[11-11-2021] [14:51:42] Best1111 failed Kill Aura (Type A) [VL: 2] [Ping: 26] [TPS: 20] [Version: 1.16.4] delay=41
+[11-11-2021] [14:54:20] Best1111 failed Kill Aura (Type A) [VL: 3] [Ping: 36] [TPS: 20] [Version: 1.16.4] delay=64

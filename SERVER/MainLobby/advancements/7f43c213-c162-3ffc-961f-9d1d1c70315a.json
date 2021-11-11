@@ -1,0 +1,50 @@
+{
+  "minecraft:recipes/misc/map": {
+    "criteria": {
+      "has_compass": "2021-11-05 10:42:41 +0530"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/light_blue_carpet": {
+    "criteria": {
+      "has_light_blue_wool": "2021-11-05 10:48:15 +0530"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/light_blue_bed": {
+    "criteria": {
+      "has_light_blue_wool": "2021-11-05 10:48:15 +0530"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_by_something": "2021-11-05 10:45:12 +0530"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/painting": {
+    "criteria": {
+      "has_wool": "2021-11-05 10:48:15 +0530"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:forest": "2021-11-05 10:42:36 +0530",
+      "minecraft:snowy_tundra": "2021-11-05 10:42:42 +0530",
+      "minecraft:desert": "2021-11-05 10:48:01 +0530",
+      "minecraft:jungle": "2021-11-05 10:42:21 +0530",
+      "minecraft:savanna": "2021-11-05 10:42:39 +0530",
+      "minecraft:plains": "2021-11-05 10:47:59 +0530"
+    },
+    "done": false
+  },
+  "minecraft:recipes/decorations/light_blue_banner": {
+    "criteria": {
+      "has_light_blue_wool": "2021-11-05 10:48:15 +0530"
+    },
+    "done": true
+  },
+  "DataVersion": 2586
+}

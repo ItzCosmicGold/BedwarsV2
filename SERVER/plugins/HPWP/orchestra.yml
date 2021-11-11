@@ -1,0 +1,22 @@
+# The id of the chat tunnel this world is in.
+# Used to show chat messages depending on the world.
+chat_tunnel_id: tunnel-5
+# Check for disabled plugins in this world?
+check_world: true
+# Define which plugins should be disabled.
+# The name should be the name of the plugin you see when it starts up.
+# or by using /plugins.
+disabled_plugins:
+- Example Plugin 1
+- Example Plugin 2
+- Example Plugin 3
+- Stress
+- TabTPS
+# Set this to true if you want disabled_plugins to act as a whitelist.
+disabled_plugins_use_whitelist: false
+# These events will run no matter what even if a plugin is disabled in a world.
+# The default ones are used for compatibility reasons only remove these if you are sure it's safe.
+whitelisted_events:
+- PlayerJoinEvent
+- PlayerKickEvent
+- PlayerQuitEvent

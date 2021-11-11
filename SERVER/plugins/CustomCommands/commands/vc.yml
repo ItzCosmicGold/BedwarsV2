@@ -1,0 +1,16 @@
+aliases: [vc]
+
+patterns:
+  - pattern: 'google'
+    description: '&cProximity&f Chat Plugins:'
+    permission: permission.required.for.command
+    permission_error_message: '&cYou can''t execute this cool command! :o'
+    worlds:
+      whitelist: [mainlobby]
+      blacklist: []
+    cooldown: 10 MINUTE
+    toggle_mode: false
+    actions:
+      - ...
+      - ...
+  - ... # another dash = another pattern

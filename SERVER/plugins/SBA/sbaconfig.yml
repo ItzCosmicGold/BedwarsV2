@@ -1,0 +1,166 @@
+version: 1.5.5
+locale: en
+prefix: '[SBA]'
+debug:
+    enabled: false
+permanent-items: false
+tnt-fireball-jumping:
+    source-damage: 1
+    acceleration-y: 1.0
+    reduce-y: 3.0
+    launch-multiplier: 4.0
+    detection-distance: 9.0
+explosion-damage: 0.25
+running-generator-drops:
+- DIAMOND
+- IRON_INGOT
+- EMERALD
+- GOLD_INGOT
+block-item-drops: true
+allowed-item-drops:
+- DIAMOND
+- IRON_INGOT
+- EMERALD
+- GOLD_INGOT
+- GOLDEN_APPLE
+- OBSIDIAN
+- TNT
+give-killer-resources: true
+remove-sword-on-upgrade: true
+block-players-putting-certain-items-onto-chest: true
+disable-armor-inventory-movement: true
+floating-generator:
+    enabled: true
+    height: 2.5
+upgrades:
+    timer-upgrades-enabled: true
+    show-upgrade-message: true
+    trap-detection-range: 7
+    multiplier: 0.25
+    limit:
+        Sharpness: 1
+        Protection: 4
+        Efficiency: 2
+        Iron: 30
+        Gold: 7
+        Diamond-I: 4
+        Emerald-I: 4
+        Diamond-II: 6
+        Emerald-II: 6
+        Diamond-III: 8
+        Emerald-III: 8
+        Diamond-IV: 12
+        Emerald-IV: 12
+    prices:
+        Sharpness-I: 4
+        Sharpness-II: 8
+        Sharpness-III: 12
+        Sharpness-IV: 16
+        Prot-I: 4
+        Prot-II: 8
+        Prot-III: 12
+        Prot-IV: 16
+        Efficiency-I: 4
+        Efficiency-II: 4
+        Efficiency-III: 4
+        Efficiency-IV: 4
+    time:
+        Diamond-II: 300
+        Emerald-II: 700
+        Diamond-III: 1000
+        Emerald-III: 1300
+        Diamond-IV: 1500
+        Emerald-IV: 1800
+date:
+    format: MM/dd/yy
+lobby-scoreboard:
+    enabled: true
+    player-size:
+        games:
+            Speedway: 4
+            Treenan: 4
+            Rooftop: 4
+            Glacier: 4
+first_start: false
+shout:
+    time-out: 60
+disabled-sword-armor-damage: true
+game:
+    tab-health: true
+    tag-health: true
+games-inventory:
+    enabled: true
+show-health-in-tablist: true
+show-health-under-player-name: true
+main-lobby:
+    enabled: true
+    custom-chat: true
+    tablist-modifications: false
+    progress-format: §b%progress%§7/§e%total%
+    world: MAINLOBBY
+    x: 189.5
+    y: 64.5
+    z: 5.5
+    yaw: -269.89385986328125
+    pitch: -6.149954319000244
+experimental:
+    reset-item-meta-on-purchase: false
+party:
+    enabled: false
+    leader-autojoin-autoleave: true
+    invite-expiration-time: 60
+team-status:
+    target-destroyed: §c✗
+    target-exists: §a✓
+    alive: '%color% %team% §a✓ §8%you%'
+    destroyed: '%color% %team% §a§f%players%§8 %you%'
+    eliminated: '%color% %team% §c✘ %you%'
+chat-format:
+    game-chat:
+        enabled: true
+        format: §7[%color%%team%§7] %color%%player% §f> %message%
+        format-spectator: §7[§fSpectator§7] §f%player% > %message%
+        all-chat-prefix: '@a'
+        all-chat-format: §7[§fALL§7] §7[%color%%team%§7] %color%%player% §f> %message%
+    lobby-chat:
+        enabled: true
+        format: '%color%%player% §f> %message%'
+shop:
+    removePurchaseMessages: false
+    shopback: BARRIER
+    pageback: ARROW
+    pageforward: BARRIER
+    shopcosmetic: AIR
+    normal-shop:
+        shopcosmetic: GRAY_STAINED_GLASS_PANE
+        name: '[SBA] Shop'
+        rows: 6
+        render-actual-rows: 6
+        render-offset: 0
+        render-header-start: 9
+        render-footer-start: 600
+        items-on-row: 9
+        show-page-numbers: true
+        enabled: true
+    upgrade-shop:
+        rows: 4
+        render-actual-rows: 6
+        render-offset: 9
+        render-header-start: 0
+        render-footer-start: 45
+        items-on-row: 9
+        show-page-numbers: true
+        enabled: true
+player-statistics:
+    xp-to-level-up: 500
+npc:
+    enabled: true
+    shop-skin: 561657710
+    upgrade-shop-skin: 779554483
+generator-splitter:
+    allowed-materials:
+    - GOLD_INGOT
+    - IRON_INGOT
+popup-tower:
+    height: 10
+autoset-bw-config: true

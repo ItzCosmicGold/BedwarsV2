@@ -1,0 +1,37 @@
+sign:
+- name: Speedway
+  location:
+    ==: org.bukkit.Location
+    world: MAINLOBBY
+    x: 168.0
+    y: 64.0
+    z: -7.0
+    pitch: 0.0
+    yaw: 0.0
+- name: Treenan
+  location:
+    ==: org.bukkit.Location
+    world: MAINLOBBY
+    x: 167.0
+    y: 64.0
+    z: -7.0
+    pitch: 0.0
+    yaw: 0.0
+- name: Glacier
+  location:
+    ==: org.bukkit.Location
+    world: MAINLOBBY
+    x: 166.0
+    y: 64.0
+    z: -7.0
+    pitch: 0.0
+    yaw: 0.0
+- name: Rooftop
+  location:
+    ==: org.bukkit.Location
+    world: MAINLOBBY
+    x: 165.0
+    y: 64.0
+    z: -7.0
+    pitch: 0.0
+    yaw: 0.0

@@ -1,0 +1,25 @@
+FlowerPot:
+  system-ID: FlowerPot
+  displayName: '&cFlowerPot'
+  itemGlowEffect: false
+  spawnMaterial: PIG_SPAWN_EGG
+  itemLore: []
+  crafting:
+    recipe: XTX,ATA,TAT
+    disable: false
+    index:
+      T: AIR
+      X: STICK
+      A: BRICK
+  projectData:
+    entities:
+      '0': H4sIAAAAAAAAAONiYOBg4HLNK8ksqQypLEhl4HYM8vUPig8OcfRzYWbgdEosTg3ISSxJZQACIN8zryyzODMpB8Rn5ALqLM1JLXLMS89J5WLgDPJ09wiJBxrAxsAYcYCBb2bpNUtHIDvS/qXi7xAXXQkgO4oBDrjAxqXmleQXVXIxcPg6evp5AG3lYGDKTGHgz83MS00uSkwrsSouyUzOZmRgdc4vzSthBOnj8MlPTizJzM9jY+CI0PVPSytOLbHfUvXQfZ0EA1AoCib04Ouh/hhNBlYG1oDMkuQMkKVA6Uio9P7PxiDgwMrAHJlY7vwQJA0A9R/IfhABAAA=
+      '1': H4sIAAAAAAAAAONiYOBg4HLNK8ksqQypLEhl4HYM8vUPig8OcfRzYWbgdEosTg3ISSxJZQACIN8zryyzODMpB8Rn5ALqLM1JLXLMS89J5WLgDPJ09wiJBxrAxsAYcYCBb2bpNUtHIDvS/qXi7xAXXQkgO4oBDrjAxqXmleQXVXIxcPg6evp5AG3lYGDKTGHgz83MS00uSkwrsSouyUzOZmRgdc4vzSthBOnj8MlPTizJzM9jY+CI0PVPSytOLdm/peqh+zoJBqBQFEzowddD/TGaDKwMrAGZJckZIEuB0pEw6c/GIODAysAcmVju3A6SBgD+LJitEAEAAA==
+      '2': H4sIAAAAAAAAAONiYOBg4HLNK8ksqQypLEhl4HYM8vUPig8OcfRzYWbgdEosTg3ISSxJZQACIN8zryyzODMpB8Rn5ALqLM1JLXLMS89J5WLgDPJ09wiJBxrAxsAYcYCBb2bpNUtHIDvS/qXi7xAXXQkgO4oBDrjAxqXmleQXVXIxcPg6evp5AG3lYGDKTGHgz83MS00uSkwrsSouyUzOZmRgdc4vzSthBOnj8MlPTizJzM9jY+CI0PVPSytOLbF/8PVQf4wmA1AoCiq0f0vVQ/d1IgysDKwBmSXJGSBLgdKRMOnPxiDgwMrAHJlY7rwFJA0AtFE9jhABAAA=
+      '3': H4sIAAAAAAAAAONiYOBg4HLNK8ksqQypLEhl4HYM8vUPig8OcfRzYWbgdEosTg3ISSxJZQACIN8zryyzODMpB8Rn5ALqLM1JLXLMS89J5WLgDPJ09wiJBxrAxsAYcYCBb2bpNUtHIDvS/qXi7xAXXQkgO4oBDrjAxqXmleQXVXIxcPg6evp5AG3lYGDKTGHgz83MS00uSkwrsSouyUzOZmRgdc4vzSthBOnj8MlPTizJzM9jY+CI0PVPSytOLdn/4Ouh/hhNBqBQFFTIfkvVQ/d1IgysDKwBmSXJGSBLgdKRMB2fjUHAgZWBOTKx3NkEJA0AwFD5+hABAAA=
+    blockList:
+      '0':
+        xOffset: 0.0
+        yOffset: 0.0
+        zOffset: 0.0
+        blockData: minecraft:flower_pot

@@ -1,0 +1,22 @@
+Table:
+  system-ID: Table
+  displayName: '&cTable'
+  itemGlowEffect: false
+  spawnMaterial: PIG_SPAWN_EGG
+  itemLore: []
+  creator: ff5f37d0-c1ea-4736-b6c3-ebbfdd67a810
+  placeAbleSide: TOP
+  crafting:
+    recipe: 0X0,0E0,0A0
+    disable: false
+    index:
+      '0': AIR
+      E: STICK
+      A: OAK_PRESSURE_PLATE
+      X: OAK_TRAPDOOR
+  projectData:
+    entities:
+      '0': H4sIAAAAAAAAAONiYOBg4HLNK8ksqQypLEhl4HYM8vUPig8OcfRzYWbg9MwryyzOTMpJZWBgYGRmYPNNLMpOLQJxuIDaSnNSixzz0nNSuRg4gzzdPULigbrZGBgj7L+JVD10XycCZEcyQAGQHcUAB1xgs1PzSvKLKrkYOHwdPf08gFZyMDBlpjDw52bmpSYXJaaVWBWXZCZnMzKwOueX5pUwgvRx+OQnJ5Zk5uexMXBE6PqnpRWnltjfnAkCs4BCUTChezsCX7fKHWBlYA3ILEnOgDiBIxIqvf8BxB2sDMyRieUQNgBGWp6QDQEAAA==
+      '1': H4sIAAAAAAAAAF2KQQ7BQBhGv6o2Y+zdwgXsGpWQKFJdqE0z2mlMMNOMH+nONZzGWdyE0pW3+977OMDAJ5oU1UldSfSDOFrG2ToJFqGL3kxf1VntjhKA48KPhD1I2wz+jVKTsTVHdzoJQoaOKjA4KS1zK0oaGXHIyIqqMMY68MbmoskBONjc5IKU0T7YZrgsy7MktHzU9k958FaK8n2b0zY/X4+Guwc3Fbff9Q14F1zf0QAAAA==
+      '2': H4sIAAAAAAAAAONiYOBg4HLNK8ksqQypLEhl4HYM8vUPig8OcfRzYWbg9kvMTQ3LLM5MykllYGBgZGbg9MwrQ+az+SYWZacWgThcQINKc1KLHPPSc1K5GDiDPN09QuKB5rExMEYwQAGQHYnEjmKAAw4GFpBtDGzKniGuvspcDBw++cmJJZn5eWwMHBG6/mlpxakl9jdngsAsoFAUVGj/SbDQAlYG1oDMkuQMiMkckTAdh42BwISBlYE5MrEcYhUAWozJ2/YAAAA=
+      '3': H4sIAAAAAAAAAF2KwQ7BQBRFb1Wlxi/4BT9g1yAhURW6wKYZ9RqT1kwzfUh3/sxfWVO6cnb3nCsAH2KmWXEd1yVhEGzCaJNs42A1ddFf6Juq1LEgAI6LXihtTrYZ4htJs7G1QHc+C6Y+OuqE4UVpSq3MeGxknpSWqupqKSkLyeTAm5irZgcQ8JcmlayM7sHfjaIsq4jR8lGHP+XBWytOz23et/n5yhoeHty9vP+ub2XRvVXXAAAA

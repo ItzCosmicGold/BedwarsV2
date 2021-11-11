@@ -1,0 +1,96 @@
+# -------------------- 杂项 --------------------
+
+messageNoPermission: |
+  &7你没有权限这么做。
+
+messageInvalidPlayer: |
+  &7玩家&c{value}&7无效（必须在线）。
+
+messageInvalidOfflinePlayer: |
+  &7玩家&c{value}&7无效。
+
+messageCC: '&d (cc&7.of {og})'
+messageSilentCC: '&d (cc&7.of {og}, silent)'
+
+textCancel: cancel
+
+# -------------------- 指令 --------------------
+
+commandParameterUsageTarget: player
+commandParameterUsageReset: reset
+commandParameterUsageOperation: operation
+commandParameterUsageAmount: amount
+commandParameterUsageSpecificEditor: editor
+messageCommandNotPlayer: |
+  &7你不能从控制台执行该指令。
+
+messageCommandMissingArgument: |
+  &7缺失参数&c{argument}&7。在指令后添加&d?&7以获取帮助。
+
+messageCommandMissingArgumentFound: |
+  &7缺失参数&c{argument} &7(找到{found})。在指令后添加&d?&7以获取帮助。
+
+messageCommandUnnecessaryArguments: |
+  &7多余参数：&c{unnecessary}&7。在指令后添加&d?&7以获取帮助。
+
+messageCommandIncompatibleArguments: |
+  &c{argument1}&7无法和&c{argument2}&7一同使用。在指令后添加&d?&7以获取帮助。
+
+messageCommandDependentArguments: |
+  &c{argument1}&7必须和&c{argument2}&7一同使用。在指令后添加&d?&7以获取帮助。
+
+messageCommandUnknown: |
+  &7找不到子指令&c{subcommand}&7。在指令后添加&d?&7以获取帮助。
+
+messageCommandHelpElementPrefix: '&6'
+messageCommandHelpElement: '{usage}&6：&f{description}'
+messageCommandHelpColorArgumentOptional: '&e&o'
+messageCommandHelpColorArgumentRequired: '&e'
+
+messageCommandHelpPageOutsideBounds: |
+  &7该帮助菜单有{pages}页。
+
+messageCommandHelpHeader: '&6&l{prefix} &6帮助 ({page}/{pages})'
+
+# -------------------- 数字 --------------------
+
+numberMillion: 百万
+numberBillion: 十亿
+numberTrillion: 万亿
+
+durationFormatS: '{seconds}秒'
+durationFormatMS: '{minutes}分{seconds}秒'
+durationFormatHMS: '{hours}小时{minutes}分钟{seconds}秒'
+durationFormatDHMS: '{days}天{hours}小时{minutes}分钟{seconds}秒'
+
+# -------------------- 花费金钱 --------------------
+
+messageMustHaveCurrency: |
+  &7你需要&c{money}&7，但你只有&c{balance}&7。
+
+messageMustHaveMoreItem: |
+  &7你需要&c{item}&7，但你只有&c{has_amount}&7。
+
+messageMustHaveItem: |
+  &7你需要&c{item}&7。
+
+# -------------------- 物品 --------------------
+
+# 占位符：{amount}, {type}, {durability}, {custom_model_data}, {enchantments}, {name}, {lore}
+
+textDescribeItem: |
+  {amount}x {type}
+  {name}
+  {lore}
+  {enchantments}
+
+textDescribeItemNameIfHas: '{name}'
+textDescribeItemLoreIfHas: '- {lore}'
+textDescribeItemEnchantmentsIfHas: '> {enchantments}'
+textDescribeItemEnchantmentsLine: '{enchant} {level}'
+textDescribeItemSingleLine: '{amount}x {type} {name}'
+
+# -------------------- 格式 --------------------
+
+# For date format characters, see https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html
+dateTimeFormat: "yyyy.MM.dd HH:mm:ss"

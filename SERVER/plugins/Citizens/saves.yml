@@ -1,0 +1,272 @@
+# Citizens NPC Storage
+
+
+
+
+
+
+
+
+last-created-npc-id: 17
+npc:
+  '1':
+    metadata:
+      silent-sounds: true
+    name: §b§lWelcome!!!
+    uuid: 76f2a31e-2964-4e85-b292-3b0a17a98a1e
+    traits:
+      age:
+        age: 0
+        locked: true
+      equipment:
+        hand:
+          type_namespace: minecraft
+          type_key: command_block
+          amount: 1
+          durability: 0
+      location:
+        bodyYaw: -180.92845
+        world: MainLobby
+        x: '173.5'
+        y: '62.0'
+        z: '15.5'
+        yaw: '-177.6796'
+        pitch: '0.0'
+      spawned: true
+      type: DROWNED
+      skintrait:
+        fetchDefaultSkin: true
+        updateSkins: false
+      lookclose:
+        range: '5.0'
+        disablewhilenavigating: true
+        enabled: false
+        enableRandomLook: false
+        randomLookDelay: 60
+        realisticlooking: false
+        randomPitchRange:
+          '0': -10.0
+          '1': 0.0
+        randomYawRange:
+          '0': 0.0
+          '1': 360.0
+      owner:
+        owner: ItzAnu_
+        uuid: 0a1a720b-311f-3fd9-9d73-75a754fc81cf
+    traitnames: scoreboardtrait,mounttrait,spawned,skintrait,equipment,lookclose,age,type,inventory,owner,location
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '0':
+    metadata:
+      flyable: true
+      silent-sounds: true
+    name: '[]'
+    uuid: c6516939-f512-4038-8f20-156a46a48e0f
+    traits:
+      gravity:
+        enabled: true
+      location:
+        bodyYaw: -49.732513
+        world: MainLobby
+        x: '209.0'
+        y: '73.0'
+        z: '28.0'
+        yaw: '-49.7325'
+        pitch: '0.0'
+      spawned: true
+      type: ENDER_DRAGON
+      followtrait:
+        active: false
+        followingUUID: 0a1a720b-311f-3fd9-9d73-75a754fc81cf
+        protect: false
+      bossbar:
+        visible: false
+      owner:
+        owner: ItzAnu_
+        uuid: 0a1a720b-311f-3fd9-9d73-75a754fc81cf
+    traitnames: mounttrait,gravity,spawned,followtrait,type,bossbar,owner,location
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '2':
+    name: §c§lBEDWARS
+    uuid: 35ee98cc-0958-4bf4-b82d-db31d0555fb0
+    traits:
+      spawned: true
+      skintrait:
+        fetchDefaultSkin: true
+        skinName: b57d995c-4bd8-48d5-b1d8-07c828ec77bd
+        updateSkins: false
+        signature: FGB3QA1bxam7lrLL3e+Pd4xhw9x8Oa+pKR84ChBjoj2p/82WMXsCG4VlXfdsve4jgLOhgLBCnHOleOZcwOmcD2AmJrQw8wOLswXwjf6KBDz7Nn5aKcUQQlxR3NNFomoEW+TQnCdCrS+CgmwyD/E+lmyI0qh/b0XdCcdXk5bTxP4Gt9w7hImKTK5Axnie8DiRkvy/2tLSBnCQ6O+pUQDhdc9qN5cmt4OWziOKGGXZZv/o9wCnMGKtOXKPxNqWNJO/USqNMMCTt4PGzNUu+sFzo/uV7YzBsU2QsUGP5D2M5nYd7O0THQxeZpFTEaiPIlcgg/oQvqvl7rqzhsm3H5BIwm359To3O2VIFmOhCzKhN9X0/tIIvynKfJt9PkVPf+qunLRvG1W/731qN39iQfn9j0hgroMR23C409EWtAECMiWPpG0s7ZHGT8oZuW3LeeuYiS6XVMec2Jfh86kLroUx7XqIZgxfYLgxtF/5Edyu+m2CSFAD3v6zsqTDdHivbFxeLBWvg29ASazLDzzoz5CVymxjBbRnUU87vo+v1viqG0CT6Qmb9iItDQ0epQlEOKVJ9q6yck3xrUBVu5xgHx7ewIxDqC3LQiWhEe1SZrPcm4dpVvqCAPqniBcHn3IR9NyVLvB1OI7FJr5crss7KughomcxjasxOBI369Vxp5TlyWw=
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTYzNTAwODI3MTU5MywKICAicHJvZmlsZUlkIiA6ICJiNjM2OWQ0MzMwNTU0NGIzOWE5OTBhODYyNWY5MmEwNSIsCiAgInByb2ZpbGVOYW1lIiA6ICJCb2JpbmhvXyIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9hODg3ODdjNTkwMzE2YmU4OWFhYjUyOGQ1YjM5NGNmYzc2YWNmNzMzZDBjZTc0Nzg4ZWVlYmYzM2ZkZjA3Y2FkIgogICAgfQogIH0KfQ==
+      location:
+        bodyYaw: -90.445885
+        world: MainLobby
+        x: '151.5'
+        y: '63.0'
+        z: '5.5'
+        yaw: '-90.4459'
+        pitch: '-3.1501'
+      type: PLAYER
+      commandtrait:
+        cost: -1.0
+        executionMode: LINEAR
+        commands:
+          '0':
+            command: bw autojoin
+            hand: RIGHT
+            player: true
+            op: false
+            cooldown: 0
+            globalcooldown: 0
+            n: -1
+            delay: 0
+      text:
+        delay: -1
+        talk-close: false
+        random-talker: false
+        realistic-looking: false
+        range: '5.0'
+        talkitem: default
+        text:
+          '0': Hi, I'm <npc>!
+      hologramtrait:
+        direction: BOTTOM_UP
+        lineHeight: -1.0
+        lines:
+          '0': '&bClick Me!!!'
+      speech: chat
+      owner:
+        owner: ItzAnu_
+        uuid: 0a1a720b-311f-3fd9-9d73-75a754fc81cf
+    traitnames: scoreboardtrait,mounttrait,hologramtrait,equipment,commandtrait,inventory,text,speech,location,skintrait,spawned,type,owner
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    metadata:
+      cached-skin-uuid-name: b57d995c-4bd8-48d5-b1d8-07c828ec77bd
+  '6':
+    metadata:
+      cached-skin-uuid-name: 402ba2d5-3be0-45e6-b9c7-039911afefb3
+    name: §c§lGUARD
+    uuid: 309a3060-b31d-4147-a52b-94e583a7f2f9
+    traits:
+      location:
+        bodyYaw: -0.55426025
+        world: MainLobby
+        x: '170.3912'
+        y: '62.0'
+        z: '-6.6257'
+        yaw: '-0.5543'
+        pitch: '-5.4002'
+      skintrait:
+        fetchDefaultSkin: true
+        signature: BEIyKmlJgOZLWRbQmGABkb73V6X0XYecz3mnE5a/LcItczDPP/qltbNNdtmTTNzPf+VnZ9aGUY2EmxwF7CLyiSPAz0duTrfN4XepNavrTD63likHhuWvd8W+1Er4xC0BDio6HEXJwJ1YPeN+ysCLCoNvuQ8OTTwUloUmCLRomLHKxULrl4ENp2gRCJ7FSIPGAZL0Akg92I3KKcUhSTPuFoqTtrKKH+VwVPN1+O+W25cYBxkEEdC8Rrw0kEhH3k7mxh7kRT6QEwHBfkIpEmVUWWbz+rNcKUZ3hsqSpCJa+GylkG/6z5LW/Xtx8u9qjvcUnHmcValwahGoE6NuLIKn5/gtq/8Yt7HvopNoUqPEma2+G9O+ye/xH7MxRzJrD6PjCMhm1wQ4C3qr4AA9olxQy3pXUR/RkuaC8hrtsTQi1zilB2gErfOgc3n7dQsdkWeb60rMNVbUaqYHBCo2WDobLf4f3kO0AYbgTzRRSxMBDc0zhAsC/IVFM6aplvCrqeNt/RNiR2rDyjcsVOG8CVcPX18HbvGbBr4fXfJRaVe4/7GKp6El3omjg92PgcROXgsoR8vhb8Q6GMM2PUuR5yJxS9tNSwjoFcr8dY0jyxUabFKsYZ0l/oiPoVLhNg9a33bRGCyF6IHAiYqy00dDkdsWl9TEN10ASxz2EQBOaIytWgY=
+        skinName: 402ba2d5-3be0-45e6-b9c7-039911afefb3
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTYzMzM1MTI3NDg3MiwKICAicHJvZmlsZUlkIiA6ICJjMGYzYjI3YTUwMDE0YzVhYjIxZDc5ZGRlMTAxZGZlMiIsCiAgInByb2ZpbGVOYW1lIiA6ICJDVUNGTDEzIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2Y5MjBlYzcxOTkyMmUwZGU1NmJmZmY0MmI5YjIxMzA2MjdiYzUzYzY4MmZkZThlMDNmMmQ3NjNjZGQ5NTkyMWEiCiAgICB9CiAgfQp9
+        updateSkins: false
+      type: PLAYER
+      spawned: true
+      owner:
+        owner: ItzAnu_
+        uuid: 0a1a720b-311f-3fd9-9d73-75a754fc81cf
+    traitnames: scoreboardtrait,mounttrait,skintrait,spawned,equipment,type,inventory,owner,location
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '3':
+    metadata:
+      cached-skin-uuid-name: 402ba2d5-3be0-45e6-b9c7-039911afefb3
+    name: §c§lGUARD
+    uuid: 1a051c9d-498e-4ab3-834b-ea3e895854b3
+    traits:
+      location:
+        bodyYaw: 0.19525976
+        world: MainLobby
+        x: '163.5'
+        y: '62.0'
+        z: '-6.5'
+        yaw: '0.1953'
+        pitch: '-3.6001'
+      skintrait:
+        fetchDefaultSkin: true
+        signature: BEIyKmlJgOZLWRbQmGABkb73V6X0XYecz3mnE5a/LcItczDPP/qltbNNdtmTTNzPf+VnZ9aGUY2EmxwF7CLyiSPAz0duTrfN4XepNavrTD63likHhuWvd8W+1Er4xC0BDio6HEXJwJ1YPeN+ysCLCoNvuQ8OTTwUloUmCLRomLHKxULrl4ENp2gRCJ7FSIPGAZL0Akg92I3KKcUhSTPuFoqTtrKKH+VwVPN1+O+W25cYBxkEEdC8Rrw0kEhH3k7mxh7kRT6QEwHBfkIpEmVUWWbz+rNcKUZ3hsqSpCJa+GylkG/6z5LW/Xtx8u9qjvcUnHmcValwahGoE6NuLIKn5/gtq/8Yt7HvopNoUqPEma2+G9O+ye/xH7MxRzJrD6PjCMhm1wQ4C3qr4AA9olxQy3pXUR/RkuaC8hrtsTQi1zilB2gErfOgc3n7dQsdkWeb60rMNVbUaqYHBCo2WDobLf4f3kO0AYbgTzRRSxMBDc0zhAsC/IVFM6aplvCrqeNt/RNiR2rDyjcsVOG8CVcPX18HbvGbBr4fXfJRaVe4/7GKp6El3omjg92PgcROXgsoR8vhb8Q6GMM2PUuR5yJxS9tNSwjoFcr8dY0jyxUabFKsYZ0l/oiPoVLhNg9a33bRGCyF6IHAiYqy00dDkdsWl9TEN10ASxz2EQBOaIytWgY=
+        skinName: 402ba2d5-3be0-45e6-b9c7-039911afefb3
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTYzMzM1MTI3NDg3MiwKICAicHJvZmlsZUlkIiA6ICJjMGYzYjI3YTUwMDE0YzVhYjIxZDc5ZGRlMTAxZGZlMiIsCiAgInByb2ZpbGVOYW1lIiA6ICJDVUNGTDEzIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2Y5MjBlYzcxOTkyMmUwZGU1NmJmZmY0MmI5YjIxMzA2MjdiYzUzYzY4MmZkZThlMDNmMmQ3NjNjZGQ5NTkyMWEiCiAgICB9CiAgfQp9
+        updateSkins: false
+      type: PLAYER
+      spawned: true
+      owner:
+        owner: ItzAnu_
+        uuid: 0a1a720b-311f-3fd9-9d73-75a754fc81cf
+    traitnames: scoreboardtrait,mounttrait,spawned,skintrait,equipment,type,inventory,owner,location
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '7':
+    name: §6§lVOICE-CHAT
+    uuid: cb4b2a3d-cb03-4a07-947f-65f4d973f84c
+    traits:
+      type: PLAYER
+      spawned: true
+      skintrait:
+        fetchDefaultSkin: true
+        skinName: 7868726b-58aa-4cae-bda5-4390ef6e5855
+        updateSkins: false
+        signature: BTM4/CjpGjkQELGjf7VsLBKb2r1VQcN/wlk+x8UVcfvwH9kDgA1Omc+p0S7ceHKp+V/Rmveh/5NTLZd9e8uRSu+IuevaFqRFv+5d90pGu/eNQ41r8OaxsGJmebi3MzCApV30KNFhMKWXvuK5PoDUVn3O5UZauZmJW+vDaOwXoASDy6BQne3yMx1XGkGz5lJs3nfanQvwfLrOx+YsUvZQcw3wce02TmwKxlwrNnoIZcrO9SCXx92JxRp8i8GQ/kewYEcmg1nBmO0Y+WioMkwD7uqZbRqTkKDmZYAeWouhashmxubZexVmFKG7j3pjFdO6HZAd+65YdSWXhKkNm89L2y+ZEhCbsO3+I1xGKj/FuRDNuVtyotd5g5CpMgTRAKP/77f1jgLfHoJ+mVREctaKFSy5EahSo4uAQl9EZIW0WQDVeUB5y9C4uqDBVQGs8O8AIwuPY4EfAz1xMUCrS9S1V7xEhmxEVMvUahTLAmjK9F5W1BINlLJday4D8nHTnxEW8Hn+IIMZPv7gccG1R/bhv1z/+yQY9Ilceyb4OJvHtjxkyWLa+CaQUN159YenQLtFYq0hrV6D52zMQ1VwszbJ51NJ7aYXtH9LZSW3WjW1FciGgoaKOw6Uaifi9HhfL5+tnLSUOwcuz/SKvsEJsguR1nMu6lqRpKFDLavrPJ2BB94=
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTYzNTg0MTg3NDQyNiwKICAicHJvZmlsZUlkIiA6ICJmNmEwYzA0ZTIwOWM0MzU0ODI5OGYxYTk0YjdlNzhhZiIsCiAgInByb2ZpbGVOYW1lIiA6ICJLb1RUSmwzVEthIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2YxMzAzOTU4ZmRmZWYzMGRkMDBiOTVmYjQ2ODI2MmRmZjA0MGU5YTRmMmJkOGU0MmFlZTY0YTY3MzYyNzViOGEiCiAgICB9CiAgfQp9
+      location:
+        bodyYaw: 156.74597
+        world: MainLobby
+        x: '152.4473'
+        y: '63.0'
+        z: '9.4335'
+        yaw: '-163.254'
+        pitch: '12.2376'
+      lookclose:
+        range: '5.0'
+        disablewhilenavigating: true
+        enabled: true
+        enableRandomLook: false
+        randomLookDelay: 60
+        realisticlooking: false
+        randomPitchRange:
+          '0': -10.0
+          '1': 0.0
+        randomYawRange:
+          '0': 0.0
+          '1': 360.0
+      commandtrait:
+        cost: -1.0
+        executionMode: LINEAR
+      text:
+        delay: -1
+        talk-close: false
+        random-talker: false
+        realistic-looking: false
+        range: '5.0'
+        talkitem: default
+        text:
+          '0': https://drive.google.com/drive/folders/1ynhuzJgtgYDytVT3ganZ3Dte0KaFkwr6?usp=sharing
+      hologramtrait:
+        direction: BOTTOM_UP
+        lineHeight: -1.0
+        lines:
+          '0': '&7(Right Click)'
+      speech: chat
+      owner:
+        owner: ItzAnu_
+        uuid: 0a1a720b-311f-3fd9-9d73-75a754fc81cf
+    traitnames: scoreboardtrait,mounttrait,hologramtrait,equipment,commandtrait,inventory,text,poses,speech,location,spawned,skintrait,lookclose,type,owner
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    metadata:
+      cached-skin-uuid-name: 7868726b-58aa-4cae-bda5-4390ef6e5855

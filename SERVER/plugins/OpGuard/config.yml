@@ -1,0 +1,269 @@
+# ------------------------------------------------------- #
+#                         OpGuard                         #
+# ------------------------------------------------------- #
+#     If you find any bugs, please report them here:      # 
+#       https://github.com/RezzedUp/OpGuard/issues        #
+# ------------------------------------------------------- #
+#   For OpGuard assistance, join Rezz's Plugin Support    #
+#   server on discord (in the #opguard-support channel)   #
+#              https://discord.gg/E4dzuQ7                 #
+# ------------------------------------------------------- #
+
+# Remember, before giving anybody op, ask yourself:
+# - Do I trust this individual?
+# - Is op necessary for what they're doing?
+# 
+# And before installing a new plugin, ask yourself:
+# - Is this from a trusted developer?
+# - Does this plugin have positive comments and reviews?
+#
+# You are the first step in securing your server. 
+# Use your head. Trust your gut.
+# Stay safe!
+
+# --------------------- #
+# OpGuard Configuration #
+# --------------------- #
+
+# [Data Lock]
+# When enabled, OpGuard will prevent new operators from being added,
+# deny password modifications, and block config reloading.
+# The only way to unlock is to disable this option and restart the server.
+# ---
+# Default: false
+lock: false
+
+# [Online-Only Op]
+# OpGuard will only op players if they're online.
+#   - /opguard op <player>
+# ---
+# Default: true
+only-op-if-online: true
+
+# [Online-Only Deop]
+# OpGuard will only deop players if they're online.
+#   - /opguard deop <player>
+# --- NOTE: ---
+# This option is false by default to avoid circumstances where you're unable
+# to deop rogue operators. That way banned operators, for example, can be deoped.
+# ---
+# Default: false
+only-deop-if-online: false
+
+# [Password Management]
+# When enabled, the following commands will be accessible in-game by verified operators:
+#   - /opguard password <new password>
+#   - /opguard reset <current password>
+# Otherwise, only console may manage the password (access the commands above).
+# ---
+# Default: true
+manage-password-in-game: true
+
+# [Toggle 'opguard.manage' Permission]
+# When enabled, players with the 'opguard.manage' permission will be able to 
+# execute OpGuard commands without actually being verified operators.
+# --- NOTE: ---
+# This is disabled by default so that *only* verified operators and console 
+# may execute OpGuard commands.
+# ---
+# Default: false
+use-opguard-management-permission-node: false
+
+# [Server Shutdown]
+# OpGuard will shut the server down if it is disabled.
+# Enable this option if you don't want other plugins to disable OpGuard.
+# ---
+# Default: false
+shutdown-on-disable: false
+
+# [PlugMan]
+# If PlugMan is installed, OpGuard will automatically exempt itself from PlugMan.
+# This option may be ignored if you don't have PlugMan installed.
+# ---
+# Default: true
+exempt-opguard-from-plugman: true
+
+# --------------- #
+#   Inspections   #
+# --------------- #
+
+# [Op List Inspection]
+# Duration of time (in ticks) that OpGuard should verify the op list.
+# Remember: 20 ticks = 1 second, so 4 ticks = 1/5 of a second.
+# This value cannot be negative or zero.
+# ---
+# Default: 4
+inspection-interval: 4
+
+# ['*' Permission Check]
+# OpGuard will check for players with the '*' permission node (all permissions).
+# If a player has '*' and isn't a verified operator, OpGuard will punish them.
+# ---
+# Default: true
+check-permissions: true
+
+# [Malicious Plugin Disabling]
+# If another plugin attempts to execute /op, /deop, or /opguard, OpGuard will disable it.
+# This also checks for plugins executing said commands on behalf of players (e.g. /sudo).
+# Plugins in the exempt-plugins list will be ignored (they are allowed to execute the commands above).
+# ---
+# Default: true
+disable-malicious-plugins-when-caught: true
+
+# [Malicious Plugin Renaming]
+# When a plugin is disabled by OpGuard, its .jar file will also be renamed.
+# This prevents malicious plugins from re-enabling on server restart/reload.
+# To undo plugin renaming, simply delete the ".opguard-disabled" part of the plugin's filename.
+# ---
+# Default: true
+rename-malicious-plugins-when-caught: true
+
+# [Enable Exempt Plugins]
+# Allows use of the exempt-plugins list.
+# ---
+# Default: true
+enable-exempt-plugins: true
+
+# [Exempt Plugins List]
+# A list of plugins exempt from OpGuard's various checks.
+# When a plugin is present in the list, OpGuard will allow it to execute
+# /op, /deop, and /opguard as console or on behalf of online players.
+# 
+# A server restart is required to apply changes to the exempt-plugins list.
+#
+# Plugin names must be exact: they're case sensitive (capitalization matters).
+# For example, if you have the plugin "MyAmazingPlugin" installed:
+#   - MyAmazingPlugin is valid
+#   - myamazingplugin is not valid
+# ---
+# Don't forget to enable the toggle directly above! (enable-exempt-plugins: true)
+exempt-plugins:
+- PerWorldPlugins
+
+# ----------- #
+#   LOGGING   #
+# ----------- #
+
+# If false, all OpGuard logging will be disabled.
+# Default: true
+enable-logging: true
+
+# Log when a plugin attempts to give op.
+# Default: true
+log-plugin-attempts: true
+
+# Log when the console attempts to give op.
+# Default: true
+log-console-attempts: true
+
+# Log when a player attempts to use /op.
+# Default: true
+log-player-attempts: true
+
+# ------------------------- #
+#   MESSAGES AND WARNINGS   #
+# ------------------------- #
+
+# Prefix for warnings.
+# Default: '&cOpGuard (&4&lWarning&c)&7:'
+warn-prefix: '&cOpGuard (&4&lWarning&c)&7:'
+
+# Color to use in warnings for emphasis.
+# Default: '&c'
+warn-emphasis-color: '&c'
+
+# Send warnings whenever a plugin attempts to give op.
+# Default: true
+warn-plugin-attempts: true
+
+# Send warnings whenever console attempts to use /op and /deop.
+# Default: true
+warn-console-op-attempts: true
+
+# Send warnings whenever console incorrectly uses /opguard.
+# Default: true
+warn-console-opguard-attempts: true
+
+# Send warnings whenever a player attempts to use /op and /deop.
+# Default: true
+warn-player-op-attempts: true
+
+# Send warnings whenever a player incorrectly uses /opguard.
+# Default: true
+warn-player-opguard-attempts: true
+
+# Prefix for security warnings.
+# Default: '&eOpGuard (&6&lSecurity&e)&7:'
+security-prefix: '&eOpGuard (&6&lSecurity&e)&7:'
+
+# Send security warnings when OpGuard lacks a password.
+# Default: true
+enable-security-warnings: true
+
+# Prefix for general status messages.
+# Default: '&aOpGuard (&2&lOkay&a)&7:'
+okay-prefix: '&aOpGuard (&2&lOkay&a)&7:'
+
+# --------------- #
+#   PUNISHMENTS   #
+# --------------- #
+
+# [Plugin /op Punishment]
+# Punish players that other plugins attempt to op.
+# If the player is already a verified operator or the plugin is exempt, no punishments will be given.
+# ---
+# Default: true
+punish-plugin-attempts: true
+
+# [Console /op Punishment]
+# Punish players when the console attempts to use /op.
+# If the player is already a verified operator, no punishments will be given.
+# ---
+# Default: true
+punish-console-op-attempts: true
+
+# [Console /opguard Punishment]
+# Punish players when console incorrectly uses /opguard.
+# This option is disabled by default to prevent accidental punishments.
+# ---
+# Default: false
+punish-console-opguard-attempts: false
+
+# [Punishment Commands]
+# A list of commands to run to punish a player.
+# ---
+# Default:
+# - ban %player% Attempting to gain op
+punishment-commands:
+- ban %player% Attempting to gain op
+
+# ----------------- #
+#   UPDATE CHECKS   #
+# ----------------- #
+
+# [Update Check]
+# OpGuard will check for updates if enabled.
+# A notification is sent to console only if an update is found.
+# ---
+# Default: true
+check-for-updates: true
+
+# [Update Check Interval]
+# A time interval in hours to perform update checks.
+# This value may not be negative or zero.
+# ---
+# Default: 12  
+update-interval: 12
+
+# ----------- #
+#   METRICS   #
+# ----------- #
+
+metrics: true
+
+# ---------------------- End Config --------------------- #
+
+# WARNING:
+# Do not modify the version manually, it may affect future config updates.
+# The config version only changes when OpGuard updates it.
+version: 3.2.5

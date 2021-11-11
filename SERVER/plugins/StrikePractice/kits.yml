@@ -1,0 +1,4095 @@
+kits:
+- ==: BattleKit
+  types: ANY
+  pearl-cooldown: 0
+  best-of: 1
+  no-bestof-rollback: false
+  icon:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: IRON_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Nodebuff"}],"text":""}'
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      - HIDE_DYE
+  elo: true
+  no-damage: false
+  chest-access: true
+  inventory:
+  - &id315
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        FIRE_ASPECT: 2
+        DAMAGE_ALL: 2
+        DURABILITY: 3
+  - &id316
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: ENDER_PEARL
+    amount: 16
+  - &id317
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id318
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id319
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id320
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id321
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id322
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id323
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: COOKED_BEEF
+    amount: 64
+  - &id324
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id325
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id326
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id327
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id328
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id329
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id330
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id331
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id332
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id333
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id334
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id335
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id336
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id337
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id338
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id339
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id340
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id341
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id342
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id343
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id344
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id345
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id346
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id347
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id348
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id349
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id350
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  no-death-countdown: false
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 3
+  helmet:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 3
+  name: nodebuffelo
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_FALL: 4
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 3
+  boxing: false
+  leggings:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 3
+- ==: BattleKit
+  types: ANY
+  pearl-cooldown: 0
+  best-of: 1
+  no-bestof-rollback: false
+  icon:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Debuff"}],"text":""}'
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      - HIDE_DYE
+  elo: true
+  no-damage: false
+  inventory:
+  - &id351
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        FIRE_ASPECT: 2
+        DAMAGE_ALL: 2
+        DURABILITY: 3
+  - &id352
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: ENDER_PEARL
+    amount: 16
+  - &id353
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: POTION
+  - &id354
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id355
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id356
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id357
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id358
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id359
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: COOKED_BEEF
+    amount: 64
+  - &id360
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id361
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id362
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id363
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id364
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id365
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id366
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id367
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id368
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id369
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: POTION
+  - &id370
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id371
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id372
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id373
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id374
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id375
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id376
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id377
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id378
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: POTION
+  - &id379
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id380
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id381
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id382
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id383
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id384
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id385
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id386
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  no-death-countdown: false
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 3
+  helmet:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 3
+  name: debuffelo
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_FALL: 4
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 3
+  boxing: false
+  leggings:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 3
+- ==: BattleKit
+  types: ANY
+  pearl-cooldown: 0
+  best-of: 1
+  no-bestof-rollback: false
+  icon:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: LAVA_BUCKET
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Build
+        UHC"}],"text":""}'
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      - HIDE_DYE
+  elo: true
+  no-damage: false
+  inventory:
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        DAMAGE_ALL: 3
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: FISHING_ROD
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: WATER_BUCKET
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: LAVA_BUCKET
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: GOLDEN_APPLE
+    amount: 6
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: COBBLESTONE
+    amount: 64
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: OAK_PLANKS
+    amount: 64
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: COOKED_BEEF
+    amount: 64
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: BOW
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        ARROW_DAMAGE: 4
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: ARROW
+    amount: 64
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: LAVA_BUCKET
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: WATER_BUCKET
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  merged-editable-kit: builduhc
+  no-death-countdown: false
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+  build: true
+  helmet:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+  name: builduhcelo
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+  boxing: false
+  leggings:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+- ==: BattleKit
+  types: BRACKETS, LMS, ANY
+  pearl-cooldown: 0
+  editable: true
+  best-of: 1
+  no-bestof-rollback: false
+  icon:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: IRON_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Nodebuff"}],"text":""}'
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      - HIDE_DYE
+  no-damage: false
+  chest-access: true
+  inventory:
+  - *id315
+  - *id316
+  - *id317
+  - *id318
+  - *id319
+  - *id320
+  - *id321
+  - *id322
+  - *id323
+  - *id324
+  - *id325
+  - *id326
+  - *id327
+  - *id328
+  - *id329
+  - *id330
+  - *id331
+  - *id332
+  - *id333
+  - *id334
+  - *id335
+  - *id336
+  - *id337
+  - *id338
+  - *id339
+  - *id340
+  - *id341
+  - *id342
+  - *id343
+  - *id344
+  - *id345
+  - *id346
+  - *id347
+  - *id348
+  - *id349
+  - *id350
+  no-death-countdown: false
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 3
+  helmet:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 3
+  name: nodebuff
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_FALL: 4
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 3
+  boxing: false
+  leggings:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 3
+- ==: BattleKit
+  types: PARTY_VS_PARTY, PARTY_SPLIT, DUEL, QUEUE, PARTY_FFA
+  pearl-cooldown: 0
+  editable: true
+  best-of: 1
+  no-bestof-rollback: false
+  icon:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Debuff"}],"text":""}'
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      - HIDE_DYE
+  no-damage: false
+  chest-access: true
+  inventory:
+  - *id351
+  - *id352
+  - *id353
+  - *id354
+  - *id355
+  - *id356
+  - *id357
+  - *id358
+  - *id359
+  - *id360
+  - *id361
+  - *id362
+  - *id363
+  - *id364
+  - *id365
+  - *id366
+  - *id367
+  - *id368
+  - *id369
+  - *id370
+  - *id371
+  - *id372
+  - *id373
+  - *id374
+  - *id375
+  - *id376
+  - *id377
+  - *id378
+  - *id379
+  - *id380
+  - *id381
+  - *id382
+  - *id383
+  - *id384
+  - *id385
+  - *id386
+  no-death-countdown: false
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 3
+  helmet:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 3
+  name: debuff
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_FALL: 4
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 3
+  boxing: false
+  leggings:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 3
+- ==: BattleKit
+  types: PARTY_VS_PARTY, PARTY_SPLIT, DUEL, QUEUE, PARTY_FFA
+  pearl-cooldown: 0
+  editable: true
+  best-of: 1
+  no-bestof-rollback: false
+  icon:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"HCF"}],"text":""}'
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      - HIDE_DYE
+  no-damage: false
+  chest-access: true
+  inventory:
+  - &id425
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        FIRE_ASPECT: 2
+        DAMAGE_ALL: 2
+        DURABILITY: 3
+  - &id426
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: ENDER_PEARL
+    amount: 16
+  - &id427
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: GOLDEN_APPLE
+    amount: 16
+  - &id428
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id429
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id430
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id431
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id432
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id433
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: COOKED_BEEF
+    amount: 64
+  - &id434
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id435
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id436
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id437
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id438
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id439
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id440
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id441
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id442
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id443
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id444
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id445
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id446
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id447
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id448
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id449
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id450
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id451
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id452
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id453
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id454
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id455
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id456
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id457
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id458
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id459
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id460
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  no-death-countdown: false
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 3
+  helmet:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 3
+  name: hcf
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_FALL: 4
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 3
+  boxing: false
+  leggings:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 3
+- ==: BattleKit
+  types: PARTY_VS_PARTY, PARTY_SPLIT, DUEL, QUEUE, PARTY_FFA
+  pearl-cooldown: 0
+  editable: true
+  best-of: 1
+  no-bestof-rollback: false
+  icon:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: LAVA_BUCKET
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Build
+        UHC"}],"text":""}'
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      - HIDE_DYE
+  no-damage: false
+  inventory:
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        DAMAGE_ALL: 3
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: FISHING_ROD
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: WATER_BUCKET
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: LAVA_BUCKET
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: GOLDEN_APPLE
+    amount: 6
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: COBBLESTONE
+    amount: 64
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: OAK_PLANKS
+    amount: 64
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: COOKED_BEEF
+    amount: 64
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: BOW
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        ARROW_DAMAGE: 4
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: ARROW
+    amount: 64
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: LAVA_BUCKET
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: WATER_BUCKET
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  no-death-countdown: false
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+  build: true
+  helmet:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+  name: builduhc
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+  boxing: false
+  leggings:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+- ==: BattleKit
+  types: PARTY_VS_PARTY, PARTY_SPLIT, DUEL, QUEUE, PARTY_FFA
+  pearl-cooldown: 0
+  editable: true
+  best-of: 1
+  no-bestof-rollback: false
+  icon:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: PUFFERFISH
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Combo"}],"text":""}'
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      - HIDE_DYE
+  combo: true
+  no-damage: false
+  inventory:
+  - &id387
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        DAMAGE_ALL: 5
+        DURABILITY: 3
+  - &id388
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: ENCHANTED_GOLDEN_APPLE
+    amount: 64
+  - &id389
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id390
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id391
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id392
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id393
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id394
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id395
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id396
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id397
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id398
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id399
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id400
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id401
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id402
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id403
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id404
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id405
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id406
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id407
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id408
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id409
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id410
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id411
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id412
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id413
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id414
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id415
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id416
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id417
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id418
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id419
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id420
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id421
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id422
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  no-death-countdown: false
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+  helmet:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+  name: combo
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+  boxing: false
+  leggings:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+- ==: BattleKit
+  types: QUEUE
+  pearl-cooldown: 0
+  best-of: 1
+  no-bestof-rollback: false
+  icon:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: ENCHANTED_GOLDEN_APPLE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Gapple"}],"text":""}'
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      - HIDE_DYE
+  elo: true
+  no-damage: false
+  inventory:
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        DAMAGE_ALL: 5
+        DURABILITY: 3
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: ENCHANTED_GOLDEN_APPLE
+    amount: 64
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  merged-editable-kit: gapple
+  no-death-countdown: false
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+  helmet:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+  name: gappleelo
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+  boxing: false
+  leggings:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+- ==: BattleKit
+  types: PARTY_VS_PARTY, PARTY_SPLIT, DUEL, QUEUE, PARTY_FFA
+  pearl-cooldown: 0
+  editable: true
+  best-of: 1
+  no-bestof-rollback: false
+  icon:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: ENCHANTED_GOLDEN_APPLE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Gapple"}],"text":""}'
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      - HIDE_DYE
+  no-damage: false
+  inventory:
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        DAMAGE_ALL: 5
+        DURABILITY: 3
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: ENCHANTED_GOLDEN_APPLE
+    amount: 64
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  no-death-countdown: false
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+  helmet:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+  name: gapple
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+  boxing: false
+  leggings:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+- ==: BattleKit
+  types: QUEUE
+  pearl-cooldown: 0
+  best-of: 1
+  no-bestof-rollback: false
+  icon:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Soup"}],"text":""}'
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      - HIDE_DYE
+  elo: true
+  no-damage: false
+  inventory:
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        DAMAGE_ALL: 1
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  merged-editable-kit: soup
+  no-death-countdown: false
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: IRON_CHESTPLATE
+  helmet:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: IRON_HELMET
+  name: soupelo
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: IRON_BOOTS
+  boxing: false
+  leggings:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: IRON_LEGGINGS
+- ==: BattleKit
+  types: ANY
+  pearl-cooldown: 0
+  editable: true
+  best-of: 1
+  no-bestof-rollback: false
+  icon:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Soup"}],"text":""}'
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      - HIDE_DYE
+  no-damage: false
+  chest-access: true
+  inventory:
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        DAMAGE_ALL: 1
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: MUSHROOM_STEW
+  no-death-countdown: false
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: IRON_CHESTPLATE
+  helmet:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: IRON_HELMET
+  name: soup
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: IRON_BOOTS
+  boxing: false
+  leggings:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: IRON_LEGGINGS
+- ==: BattleKit
+  pearl-cooldown: 0
+  best-of: 1
+  no-bestof-rollback: false
+  icon:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: STONE_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Premade
+        CustomKit"}],"text":""}'
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      - HIDE_DYE
+  no-damage: false
+  inventory:
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: STONE_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Premade
+        CustomKit"}],"text":""}'
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: FISHING_ROD
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: COBBLESTONE
+    amount: 64
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: BREAD
+    amount: 32
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: GOLDEN_APPLE
+    amount: 4
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: ARROW
+    amount: 64
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: FLINT_AND_STEEL
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: BOW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  horse: true
+  no-death-countdown: false
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: IRON_CHESTPLATE
+  build: true
+  helmet:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: LEATHER_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+  name: premadecustomkit
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: LEATHER_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      enchants:
+        PROTECTION_FALL: 4
+        PROTECTION_ENVIRONMENTAL: 2
+  boxing: false
+  leggings:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: GOLDEN_LEGGINGS
+- ==: BattleKit
+  types: PARTY_VS_PARTY, PARTY_SPLIT, DUEL, QUEUE, PARTY_FFA
+  pearl-cooldown: 0
+  best-of: 1
+  no-bestof-rollback: false
+  icon:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: PUFFERFISH
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Combo"}],"text":""}'
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      - HIDE_DYE
+  combo: true
+  elo: true
+  no-damage: false
+  inventory:
+  - *id387
+  - *id388
+  - *id389
+  - *id390
+  - *id391
+  - *id392
+  - *id393
+  - *id394
+  - *id395
+  - *id396
+  - *id397
+  - *id398
+  - *id399
+  - *id400
+  - *id401
+  - *id402
+  - *id403
+  - *id404
+  - *id405
+  - *id406
+  - *id407
+  - *id408
+  - *id409
+  - *id410
+  - *id411
+  - *id412
+  - *id413
+  - *id414
+  - *id415
+  - *id416
+  - *id417
+  - *id418
+  - *id419
+  - *id420
+  - *id421
+  - *id422
+  merged-editable-kit: combo
+  no-death-countdown: false
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+  helmet:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+  name: comboelo
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+  boxing: false
+  leggings:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+- ==: BattleKit
+  no-hunger: true
+  types: DUEL, QUEUE
+  pearl-cooldown: 0
+  best-of: 1
+  no-bestof-rollback: false
+  icon:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: INK_SAC
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Sumo"}],"text":""}'
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      - HIDE_DYE
+  stick-spawn: true
+  no-damage: false
+  inventory:
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - &id423
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: PORKCHOP
+    amount: 64
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  no-death-countdown: false
+  chestplate: null
+  potions:
+  - ==: PotionEffect
+    effect: 11
+    duration: 19997662
+    amplifier: 255
+    ambient: false
+    has-particles: true
+    has-icon: true
+  helmet: null
+  name: sumo
+  boots: null
+  boxing: false
+  leggings: null
+- ==: BattleKit
+  no-hunger: true
+  types: DUEL, QUEUE
+  pearl-cooldown: 0
+  best-of: 1
+  no-bestof-rollback: false
+  icon:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: INK_SAC
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Sumo"}],"text":""}'
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      - HIDE_DYE
+  elo: true
+  no-damage: false
+  inventory:
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - *id423
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  no-death-countdown: false
+  chestplate: null
+  helmet: null
+  name: sumoelo
+  boots: null
+  boxing: false
+  leggings: null
+- ==: BattleKit
+  no-hunger: true
+  types: DUEL, QUEUE
+  pearl-cooldown: 0
+  best-of: 3
+  no-bestof-rollback: false
+  icon:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: INK_SAC
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Sumo
+        "},{"bold":false,"italic":false,"color":"yellow","text":"(Best of 3)"}],"text":""}'
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      - HIDE_DYE
+  stick-spawn: true
+  no-damage: false
+  inventory:
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - &id424
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: PORKCHOP
+    amount: 64
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  no-death-countdown: false
+  chestplate: null
+  potions:
+  - ==: PotionEffect
+    effect: 11
+    duration: 19997736
+    amplifier: 255
+    ambient: false
+    has-particles: true
+    has-icon: true
+  helmet: null
+  name: sumobestof3
+  boots: null
+  boxing: false
+  leggings: null
+- ==: BattleKit
+  no-hunger: true
+  types: DUEL, QUEUE
+  pearl-cooldown: 0
+  best-of: 3
+  no-bestof-rollback: false
+  icon:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: INK_SAC
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Sumo
+        "},{"bold":false,"italic":false,"color":"yellow","text":"(Best of 3)"}],"text":""}'
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      - HIDE_DYE
+  elo: true
+  no-damage: false
+  inventory:
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - *id424
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  no-death-countdown: false
+  chestplate: null
+  helmet: null
+  name: sumobestof3elo
+  boots: null
+  boxing: false
+  leggings: null
+- ==: BattleKit
+  types: ANY
+  pearl-cooldown: 0
+  editable: true
+  best-of: 1
+  no-bestof-rollback: false
+  icon:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: ENCHANTING_TABLE
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"No
+        Enchant"}],"text":""}'
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      - HIDE_DYE
+      blockMaterial: ENCHANTING_TABLE
+  no-damage: false
+  chest-access: true
+  inventory:
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_SWORD
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: ENDER_PEARL
+    amount: 16
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: COOKED_BEEF
+    amount: 64
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  no-death-countdown: false
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_CHESTPLATE
+  helmet:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_HELMET
+  name: noenchant
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_BOOTS
+  boxing: false
+  leggings:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_LEGGINGS
+- ==: BattleKit
+  types: PREMIUM_QUEUE
+  pearl-cooldown: 0
+  best-of: 1
+  no-bestof-rollback: false
+  icon:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: IRON_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Nodebuff"}],"text":""}'
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      - HIDE_DYE
+  elo: true
+  no-damage: false
+  chest-access: true
+  inventory:
+  - *id315
+  - *id316
+  - *id317
+  - *id318
+  - *id319
+  - *id320
+  - *id321
+  - *id322
+  - *id323
+  - *id324
+  - *id325
+  - *id326
+  - *id327
+  - *id328
+  - *id329
+  - *id330
+  - *id331
+  - *id332
+  - *id333
+  - *id334
+  - *id335
+  - *id336
+  - *id337
+  - *id338
+  - *id339
+  - *id340
+  - *id341
+  - *id342
+  - *id343
+  - *id344
+  - *id345
+  - *id346
+  - *id347
+  - *id348
+  - *id349
+  - *id350
+  merged-editable-kit: nodebuff
+  no-death-countdown: false
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 3
+  helmet:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 3
+  name: nodebuffelopremium
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_FALL: 4
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 3
+  boxing: false
+  leggings:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 3
+- ==: BattleKit
+  no-hunger: true
+  types: PARTY_VS_PARTY, PARTY_SPLIT, DUEL, QUEUE, PARTY_FFA
+  pearl-cooldown: 0
+  editable: true
+  best-of: 1
+  no-bestof-rollback: false
+  icon:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: STONE_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Skywars"}],"text":""}'
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      - HIDE_DYE
+  no-damage: false
+  inventory:
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: STONE_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      Unbreakable: true
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: FISHING_ROD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      Unbreakable: true
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: BOW
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      Unbreakable: true
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: FLINT_AND_STEEL
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      Damage: 64
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: WATER_BUCKET
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: POTION
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: SNOWBALL
+    amount: 6
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: BREAD
+    amount: 9
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: OAK_PLANKS
+    amount: 64
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: ARROW
+    amount: 5
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: COBBLESTONE
+    amount: 64
+  no-death-countdown: false
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: IRON_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      Unbreakable: true
+  build: true
+  helmet:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: IRON_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      Unbreakable: true
+  name: skywars
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      Unbreakable: true
+  boxing: false
+  leggings:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: IRON_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      Unbreakable: true
+- ==: BattleKit
+  pearl-cooldown: 0
+  best-of: 1
+  no-bestof-rollback: false
+  icon:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: BOW
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Archer"}],"text":""}'
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      - HIDE_DYE
+  no-damage: false
+  inventory:
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: WOODEN_PICKAXE
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: BOW
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        ARROW_INFINITE: 1
+        ARROW_DAMAGE: 3
+        DURABILITY: 3
+  - null
+  - null
+  - null
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: ARROW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: COOKED_BEEF
+    amount: 64
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  no-death-countdown: false
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: LEATHER_CHESTPLATE
+  helmet:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: LEATHER_HELMET
+  name: archer
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: LEATHER_BOOTS
+  boxing: false
+  leggings:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: LEATHER_LEGGINGS
+- ==: BattleKit
+  no-hunger: true
+  types: PARTY_VS_PARTY, PARTY_SPLIT, DUEL, QUEUE, PARTY_FFA
+  pearl-cooldown: 0
+  best-of: 1
+  no-bestof-rollback: false
+  icon:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_SHOVEL
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Spleef"}],"text":""}'
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      - HIDE_DYE
+  stick-spawn: true
+  extra-rollback-materials: SNOW_BLOCK
+  no-damage: false
+  inventory:
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_SHOVEL
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        DIG_SPEED: 5
+        DURABILITY: 3
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: SNOWBALL
+    amount: 16
+  - null
+  - null
+  - null
+  - null
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: GOLDEN_LEGGINGS
+  - null
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: COOKED_BEEF
+    amount: 64
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  only-bow: true
+  no-death-countdown: false
+  chestplate: null
+  build: true
+  helmet: null
+  name: spleef
+  boots: null
+  boxing: false
+  leggings:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: GOLDEN_LEGGINGS
+- ==: BattleKit
+  types: ANY
+  pearl-cooldown: 0
+  editable: true
+  best-of: 1
+  no-bestof-rollback: false
+  icon:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_AXE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"AxePvP"}],"text":""}'
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      - HIDE_DYE
+  no-damage: false
+  inventory:
+  - &id461
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_AXE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        DAMAGE_ALL: 2
+  - &id462
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: GOLDEN_APPLE
+    amount: 16
+  - &id463
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id464
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id465
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id466
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id467
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id468
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id469
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - &id470
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  - &id471
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: AIR
+    amount: 0
+  no-death-countdown: false
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: IRON_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 3
+  helmet:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: IRON_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 3
+  name: axepvp
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_FALL: 4
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 3
+  boxing: false
+  leggings:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: IRON_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 3
+- ==: BattleKit
+  types: ANY
+  pearl-cooldown: 0
+  editable: true
+  best-of: 1
+  no-bestof-rollback: false
+  icon:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: GOLDEN_CARROT
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"SG"}],"text":""}'
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      - HIDE_DYE
+  no-damage: false
+  inventory:
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: IRON_SWORD
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: FISHING_ROD
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: BOW
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: FLINT_AND_STEEL
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      Damage: 60
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: BREAD
+    amount: 2
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: GOLDEN_CARROT
+    amount: 3
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: GOLDEN_APPLE
+    amount: 2
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: COOKED_BEEF
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: ARROW
+    amount: 8
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  no-death-countdown: false
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: CHAINMAIL_CHESTPLATE
+  build: true
+  helmet:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: GOLDEN_HELMET
+  name: sg
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: LEATHER_BOOTS
+  boxing: false
+  leggings:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: IRON_LEGGINGS
+- ==: BattleKit
+  types: ANY
+  pearl-cooldown: 0
+  best-of: 1
+  no-bestof-rollback: false
+  icon:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"HCF"}],"text":""}'
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      - HIDE_DYE
+  elo: true
+  no-damage: false
+  inventory:
+  - *id425
+  - *id426
+  - *id427
+  - *id428
+  - *id429
+  - *id430
+  - *id431
+  - *id432
+  - *id433
+  - *id434
+  - *id435
+  - *id436
+  - *id437
+  - *id438
+  - *id439
+  - *id440
+  - *id441
+  - *id442
+  - *id443
+  - *id444
+  - *id445
+  - *id446
+  - *id447
+  - *id448
+  - *id449
+  - *id450
+  - *id451
+  - *id452
+  - *id453
+  - *id454
+  - *id455
+  - *id456
+  - *id457
+  - *id458
+  - *id459
+  - *id460
+  merged-editable-kit: hcf
+  no-death-countdown: false
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 3
+  helmet:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 3
+  name: hcfelo
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_FALL: 4
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 3
+  boxing: false
+  leggings:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 3
+- ==: BattleKit
+  types: ANY
+  pearl-cooldown: 0
+  best-of: 1
+  no-bestof-rollback: false
+  icon:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND_AXE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"AxePvP"}],"text":""}'
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      - HIDE_DYE
+  elo: true
+  no-damage: false
+  inventory:
+  - *id461
+  - *id462
+  - *id463
+  - *id464
+  - *id465
+  - *id466
+  - *id467
+  - *id468
+  - *id469
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - *id470
+  - *id471
+  no-death-countdown: false
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: IRON_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 3
+  helmet:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: IRON_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 3
+  name: axepvpelo
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_FALL: 4
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 3
+  boxing: false
+  leggings:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: IRON_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+        DURABILITY: 3

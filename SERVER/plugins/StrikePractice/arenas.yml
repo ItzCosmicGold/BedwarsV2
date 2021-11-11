@@ -1,0 +1,72 @@
+arenas:
+- ==: Arena
+  loc2:
+    ==: Location
+    world: arenas
+    x: -268.4251023745715
+    y: 100.0
+    z: -77.66098515738302
+    pitch: 83.85051
+    yaw: -325.70483
+  loc1:
+    ==: Location
+    world: arenas
+    x: -306.45876500430285
+    y: 100.0
+    z: -8.514447614832914
+    pitch: 85.94996
+    yaw: -140.27869
+  display-name: null
+  center:
+    ==: Location
+    world: arenas
+    x: -277.5943314243435
+    y: 99.0
+    z: -39.573594609327245
+    pitch: 90.0
+    yaw: -273.16547
+  name: tree1
+  icon:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: LEGACY_WOOL
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"text":"tree1"}],"text":""}'
+- ==: Arena
+  loc2:
+    ==: Location
+    world: arenas
+    x: -136.43293900320097
+    y: 82.0
+    z: -51.68948960137134
+    pitch: 84.89995
+    yaw: -310.8094
+  loc1:
+    ==: Location
+    world: arenas
+    x: -174.50342271092043
+    y: 82.0
+    z: 17.6308689059073
+    pitch: 85.79996
+    yaw: -139.80392
+  display-name: null
+  build: true
+  center:
+    ==: Location
+    world: arenas
+    x: -149.58159997055841
+    y: 81.0
+    z: -8.499148482338832
+    pitch: 86.99997
+    yaw: -358.35828
+  name: tree
+  icon:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: LEGACY_WOOL
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"text":"tree"}],"text":""}'

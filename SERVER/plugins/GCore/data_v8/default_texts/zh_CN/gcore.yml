@@ -1,0 +1,32 @@
+# -------------------- 插件 --------------------
+
+messagePluginUnknown: |
+  &7插件&7{plugin}&7不存在。
+
+messagePluginReloaded: |
+  &7已重载插件&a{plugin}&7。
+
+messagePluginManipulateError: |
+  &7无法执行对&7{plugin}&7的操作。
+
+messagePluginList: |
+  &7共有&a{count}&7款插件，已激活&a{active}&7个，未激活&7{inactive}&7个：{plugins}
+
+messageGcoreExportFile: |
+  &7&a{plugins}的数据和配置文件&7已导出到&a{file}&7。请将其分享给插件开发者。
+
+messageGcoreExportCouldnt: |
+  &7无法导出&c{file}&7。
+
+# -------------------- 指令 --------------------
+
+commandDescriptionGcore: GCore的主指令
+commandDescriptionGcorePlugins: 列出以GCore为前置的插件
+commandDescriptionGcoreExport: 导出以GCore为前置的插件数据
+commandDescriptionGcoreItemRead: 将物品写入配置中
+
+messageItemReadNull: |
+  &c该物品无法导出到配置中。请手持一件物品。
+
+messageItemReadExported: |
+  &7该物品已导出至&a{file}&7，文件路径：&a{path}&7。

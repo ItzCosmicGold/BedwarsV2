@@ -1,0 +1,26 @@
+log_copy:
+  system-ID: Log
+  displayName: '&cLog'
+  itemGlowEffect: false
+  spawnMaterial: PIG_SPAWN_EGG
+  itemLore: []
+  creator: ff5f37d0-c1ea-4736-b6c3-ebbfdd67a810
+  placeAbleSide: TOP
+  crafting:
+    recipe: XXX,XAX,XOX
+    disable: false
+    index:
+      X: AIR
+      A: ITEM_FRAME
+      O: OAK_LOG
+  projectData:
+    entities:
+      '0': H4sIAAAAAAAAAD2MzQqCQACER0pZt2fxEh26hf1QQaWYh+wim6y1YGvkVvh00b2unX2IHqCVfr7TNwMzFCCgI6mEKsPywNFyg7kXxMvQXQwbsPus4H7GFIdG56k8i0JssjobVC9PGT+6cptxCjuYjidhrA8sGKtrdQu6TsG1R/iifY0/BM0F23MYbQoyyxOmRC4tkJXjpWnB1fWZ1ugVWX+r3uuuecCE6QuV7D6nJPotqs+ziUbELoNO7W8B1xZh4gAAAA==
+      '1': H4sIAAAAAAAAAEWNzwqCQBjER8zY1mcJOnQP+0MJpWES2UU2WWvBNHIrepR6md6icy/RvV20+p1mvmHmowABHeVSyGt4PXDYTjDzg3gROt7QhO2xPV+KUmwyDsAw0eqzks8zJrWH8m5+/udUbZ0yfnTybcYpWoE7noSxmmzCWPXeN81d6Qg1Sq/xg6ChH8LoUJBpkTApirwJsmr7aVpy+XimGtUi6+/pVVUtWHMhk101SqI67v1iM2KXQVfrD4DZxkb0AAAA
+      '2': H4sIAAAAAAAAAONiYOBg4HLNK8ksqQypLEhl4HYM8vUPig8OcfRzYWbgdEosTg3ISSxJZQACIN8zryyzODMpB8Rn5ALqLM1JLXLMS89J5WLgDPJ09wiJBxrAxsAYYX/hYJCFbnEqkB3JAAVAdhQDHHAwsPgl5qYyMBpyMXD45CcnlmTm57ExcETo+qelFaeW7L+WBgJAXRxRUCH7ZxAhVgbWgMyS5AyIoRyRMOkHEJNZGZgjE8udTUBsAPxia4PiAAAA
+    blockList:
+      '0':
+        xOffset: 0.0
+        yOffset: 0.0
+        zOffset: 0.0
+        material: OAK_LOG

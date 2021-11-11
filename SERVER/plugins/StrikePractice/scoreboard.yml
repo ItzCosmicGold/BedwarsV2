@@ -1,0 +1,153 @@
+#                                             #
+# ---------------------------------------------#
+# Scoreboard                                  #
+# ---------------------------------------------#
+#                                             #
+# Check spigotmc page for placeholders and help with [display=true/false] function if needed
+scoreboard:
+  enabled: true
+  # In ticks
+  update-time: 20
+  # When the player has the 'default' scoreboard
+  lobby-update-time: 100
+  disabled-worlds:
+    - 'exampleWorld'
+  # Try this if the scoreboard conflicts with other scoreboard/tag/tab plugins
+  # 'false' has better performance
+  sync-set: true
+  # Whether scoreboard lines should copy colors from the prefix to main name and from main name to suffix
+  # Helps with color bugs in newer Minecraft versions, disable if it causes more issues.
+  copy-previous-colors: true
+  # Should the scoreboard be updated just after a player teleports
+  # Results in a smooth scoreboard updating when joining games and fights
+  teleport-update: true
+  # Should the enderpearl cooldown be displayed only during fight
+  enderpearl-cooldown-only-in-fight: true
+  # Title of the scoreboard
+  title: '&a&lStrikePractice'
+  # Add a color codes if you have same line multiple times (otherwise it will disappear)
+  default:
+    - '&7&m------------&7&m------------'
+    - '&fOnline&7: &e<players>'
+    - '&fIn Queue&7: &e<in_queue>'
+    - '&fRankeds Left&7: &e<rankeds_left>'
+    - ' [display=<is_cooldown>]'
+    # [display=!<is_enderpearl_cooldown>] means it won't show the line if the player has enderpearl cooldown
+    # add [display=!<is_party>] if you don't want the ------------------------ while in party
+    - '&fFFA players: &e<ffa_players>[display=<is_ffa>]'
+    - '&fResetting in: &e<ffa_rollback>[display=<is_ffa>]'
+    - '&fHost Events[display=<is_cooldown>]'
+    - '&fTournament&7: &e<cooldown_brackets>[display=<is_cooldown_brackets>]'
+    - '&fSumo&7: &e<cooldown_sumo>[display=<is_cooldown_sumo>]'
+    - '&fLMS&7: &e<cooldown_lms>[display=<is_cooldown_lms>]'
+    - '&7&m----------&7&m--------------[display=!<is_enderpearl_cooldown>]'
+  duel:
+    - '&7&m------------&7&m------------'
+    - '&fRound &e<round> [display=<is_bestof>]'
+    - '  &fYou: &e<own_wins> [display=<is_bestof>]'
+    - '  &fThey: &e<opponent_wins> [display=<is_bestof>]'
+    - ' [display=<is_bestof>]'
+    - '&fDuration&7&7: &e<duration>'
+    - '&fOpponent&7&7: &e<opponent>'
+    # <hits> is how many times you have hit someone (not how many times you have been hit)
+    - '&fHits: [display=<is_boxing>]'
+    - '  &fYou: &e<hits>/100 [display=<is_boxing>]'
+    - '  &fThey: &e<hits_opponent>/100 [display=<is_boxing>]'
+    - ' [display=<is_boxing>]'
+    - '&fYour Ping/CPS&7&7: &e<ping>ms / <cps> CPS'
+    - '&fEnemy Ping/CPS&7&7: &e<opponent_ping>ms / <opponent_cps> CPS'
+    - ''
+    - '&7&m----------&7&m--------------[display=!<is_enderpearl_cooldown>]'
+  party-ffa:
+    - '&7&m------------&7&m------------'
+    - '&6Party FFA'
+    - '&fPlayers Left&7: &e<enemy_team_left>&f/&e<party_members>'
+    - '&fFight duration&7: &e<duration>'
+    - '&7&m------------------------[display=!<is_enderpearl_cooldown>]'
+  party-split:
+    - '&7&m------------&7&m------------'
+    - '&6Party Split'
+    - '&fYour Team Left&7: &e<own_team_left>&f/&e<own_team_members>'
+    - '&fEnemy Team Left&7: &e<enemy_team_left>&f/&e<enemy_team_members>'
+    - '&fFight duration&7: &e<duration>'
+    - '&7&m----------&7&m--------------[display=!<is_enderpearl_cooldown>]'
+  party-vs-bots:
+    - '&7&m------------&7&m------------'
+    - '&6Party Vs Bots'
+    - '&fPlayers Left&7: &e<own_team_left>&f/&e<own_team_members>'
+    - '&fBots Left&7: &e<enemy_team_left>&f/&e<enemy_team_members>'
+    - '&fFight duration&7: &e<duration>'
+    - '&7&m----------&7&m--------------[display=!<is_enderpearl_cooldown>]'
+  party-vs-party:
+    - '&7&m------------&7&m------------'
+    - '&6Party Vs Party'
+    - '&fEnemy Team&7: &e<enemy_team_owner>&f''s Party'
+    - ''
+    - '&fYour Team Left&7: &e<own_team_left>&f/&e<party_members>'
+    - '&fEnemy Team Left&7: &e<enemy_team_left>&f/&e<enemy_team_members>'
+    - '&fFight duration&7: &e<duration>'
+    - '&7&m----------&7&m--------------[display=!<is_enderpearl_cooldown>]'
+  brackets:
+    - '&7&m------------&7&m------------'
+    - '&6Brackets'
+    - '&e<current_fight_player1> &f(&e<player1_ping> ms&f)[display=<brackets_started>]'
+    - '&fvs[display=<brackets_started>]'
+    - '&e<current_fight_player2> &f(&e<player2_ping> ms&f)[display=<brackets_started>]'
+    - '&fPlayers&7: &e<players_left>/<total_players>'
+    - '&fFight Duration&7: &e<duration>'
+    - '&fEvent Duration&7: &e<total_duration>'
+    - '&7&m----------&7&m--------------[display=!<is_enderpearl_cooldown>]'
+  sumo:
+    - '&7&m------------&7&m------------'
+    - '&6Sumo'
+    - '&e<current_fight_player1> &f(&e<player1_ping> ms&f)[display=<sumo_started>]'
+    - '&fvs[display=<sumo_started>]'
+    - '&e<current_fight_player2> &f(&e<player2_ping> ms&f)[display=<sumo_started>]'
+    - '&fPlayers&7: &e<players_left>&7/&e<total_players>'
+    - '&fFight Duration&7: &e<duration>[display=<sumo_started>]'
+    - '&fEvent Duration&7: &e<total_duration>[display=<sumo_started>]'
+    - '&7&m----------&7&m--------------[display=!<is_enderpearl_cooldown>]'
+  juggernaut:
+    - '&7&m------------&7&m------------'
+    - '&6Juggernaut&7: &e<juggernaut>'
+    - '&fEvent Duration&7: &e<total_duration>'
+    - '&7&m----------&7&m--------------[display=!<is_enderpearl_cooldown>]'
+  lms:
+    - '&7&m------------&7&m------------'
+    - '&6Last Man Standing'
+    - '&fPlayers Left&7: &e<alive>&f/&e<lms_players>'
+    - '&fEvent Duration&7: &e<total_duration>'
+    - '&7&m----------&7&m--------------[display=!<is_enderpearl_cooldown>]'
+  koth:
+    - '&7&m------------&7&m------------'
+    - '&6King of The Hill'
+    - '&fCapper&7: &e<capper> &f(&e<capper_team>&f)'
+    - '&fTimer&7: &e<timer>'
+    - '&fEvent Duration&7: &e<total_duration>'
+    - '&7&m----------&7&m--------------[display=!<is_enderpearl_cooldown>]'
+  queue:
+    - '&7&m------------&7&m------------'
+    - '&6Queue&7: &e<kit>'
+    - '&fElo range&7: &e<search_range1>&f-&e<search_range2>[display=<ranked>]'
+    - '&fWaited&7: &e<wait_time>'
+    - '&fIn queue&7: &e<in_queue>'
+    - '&7&m----------&7&m--------------[display=!<is_enderpearl_cooldown>]'
+  spectator:
+    - '&7&m------------&7&m------------'
+    - '&6&lSpectating'
+    - '&fArena&7: &e<arena>'
+    - '&fKit&7: &e<kit>'
+    - '&fRound&7: &e<round>/<total_rounds>[display=<is_bestof>]'
+    - '&fTeam 1 Left&7: &e<own_team_left>'
+    - '&fTeam 2 Left&7: &e<enemy_team_left>'
+    - '&fFight duration&7: &e<duration>'
+    - '&7&m----------&7&m--------------'
+  # this will be appended in the scoreboard whenever the player is in a party
+  party-addition:
+    - '&fParty Owner&7: &e<party_owner>'
+    - '&fParty Members&7:  &e<party_members>'
+    - '&7&m--------------&7&m------------'
+  # this will be appended if the player is on enderpearl cooldown
+  enderpearl-cooldown-addition:
+    - '&fPearl Cooldown&7: &e<enderpearl_cooldown>'
+    - '&7&m---------&7&m-----&7&m----------'

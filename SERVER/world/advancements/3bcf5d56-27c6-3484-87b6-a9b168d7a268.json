@@ -1,0 +1,10 @@
+{
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:taiga_hills": "2021-11-05 10:34:52 +0530",
+      "minecraft:jungle": "2021-11-05 10:34:50 +0530"
+    },
+    "done": false
+  },
+  "DataVersion": 2586
+}

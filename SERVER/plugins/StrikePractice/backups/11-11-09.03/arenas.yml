@@ -1,0 +1,36 @@
+arenas:
+- ==: Arena
+  loc2:
+    ==: Location
+    world: arenas
+    x: -245.5211169404423
+    y: 75.0
+    z: -71.486470534332
+    pitch: -1.6490691
+    yaw: -136.10516
+  loc1:
+    ==: Location
+    world: arenas
+    x: -207.39818522482133
+    y: 75.0
+    z: -140.65251432446735
+    pitch: 87.89998
+    yaw: -358.71103
+  display-name: null
+  center:
+    ==: Location
+    world: arenas
+    x: -214.92644607178485
+    y: 74.0
+    z: -109.12632631515453
+    pitch: 89.55038
+    yaw: -3.3600159
+  name: tree
+  icon:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: LEGACY_WOOL
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"text":"tree"}],"text":""}'

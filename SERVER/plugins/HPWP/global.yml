@@ -1,0 +1,7 @@
+# The message that is sent when someone tries to execute a disabled command.
+# Use the '&' symbol for color codes.
+command_disabled_message: '&cSorry, that command is disabled.'
+# Receive update notifications. Message is sent to all people with hpwp.notify permission.
+update_notification: true
+# Use d (day), h(hour), s(second) to change update checking interval.
+update_notification_interval: 4h 0m 0s

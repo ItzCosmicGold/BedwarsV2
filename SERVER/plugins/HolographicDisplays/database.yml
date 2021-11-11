@@ -1,0 +1,12 @@
+vc:
+  location: MainLobby, 183.500, 67.200, 5.500
+  lines:
+  - '&6THE SERVER &fHAS PROXIMITY CHAT BUILT IN'
+  - TO USE CLICK THE &6VOICE-CHAT &fNPC
+  - PUT THE &b MODS &f IN YOUR &cMODS FOLDER
+  - LAUNCH THE GAME USING &c&lFABRIC 1.16.5
+parkour:
+  location: MainLobby, 151.500, 65.200, 1.500
+  lines:
+  - '&b&lPARKOUR'
+  - '&7(Stand On The Portal Frame)'

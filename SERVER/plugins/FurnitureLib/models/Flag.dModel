@@ -1,0 +1,27 @@
+Flag:
+  system-ID: Flag
+  displayName: '&cFlag'
+  itemGlowEffect: false
+  spawnMaterial: PIG_SPAWN_EGG
+  itemLore: []
+  crafting:
+    recipe: XAX,XBO,XAX
+    disable: false
+    index:
+      X: AIR
+      A: STONE_SLAB
+      B: STICK
+      O: BLACK_BANNER
+  projectData:
+    entities:
+      '0': H4sIAAAAAAAAAONiYOBg4HLNK8ksqQypLEhl4HYM8vUPig8OcfRzYWbgdEosTg3ISSxJZQACIN8zryyzODMpB8RnZGZg800syk4tAnG4gMaU5qQWOeal56RyMXAGebp7hMQDTWNjYIyw/2ZbsPg6ly2QHckABUB2FAMccIHNTs0ryS+q5GLg8HX09PMAOoGDgSkzhYE/NzMvNbkoMa3EqrgkMzmbkYHVOb80r4QRpI/DJz85sSQzP4+NgSNC1z8trTi1ZP+NwNetcjuAdnBEwYTuiVQ9dF/HwMrAGpBZkpwBcQJHJFTafuVMIJgBlGaOTCx3NgFJAwBY0dR5HQEAAA==
+      '1': H4sIAAAAAAAAAONiYOBg4HLNK8ksqQypLEhl4HYM8vUPig8OcfRzYWbgdEosTg3ISSxJZQACIN8zryyzODMpB8RnZGZg800syk4tAnG4gMaU5qQWOeal56RyMXAGebp7hMQDTWNjYIyw/2ZbsPg6ly2QHckABUB2FAMccIHNTs0ryS+q5GLg8HX09PMAOoGDgSkzhYE/NzMvNbkoMa3EqrgkMzmbkYHVOb80r4QRpI/DJz85sSQzP4+NgSNC1z8trTi1ZP+NwNetcjuAdnBEwYTuiVQ9dF/HwMrAGpBZkpwBcQJHJFTa/s/XQ/0xmkBp5sjEcmcTkDQAHvpcqh0BAAA=
+      '2': H4sIAAAAAAAAAF2JSw/BQBhFb9VIja2/YcXKSj0SEq9ggY2M+hoTY0Y6H9J/r6UrZ3XvORKIICeWNee7/EFoxZvFanPa7uLlOERzqDytjWJCQQixvStjihkUbWZf2uuzod9vLFR2o6w88hvJsstyifp0Eo8j1PQF7bu2lGQq5b5nZ+nkjToHECP3tBwAEtHcJYq1sw1E+84qTT0xKgp1/FMCYq05uVb5UOVB2C0ZCIQH9R71yvwBUUpPT+sAAAA=
+      '3': H4sIAAAAAAAAAONiYOBg4HLNK8ksqQypLEhl4HYM8vUPig8OcfRzYWbgdEosTg3ISSxJZQACIN8zryyzODMpB8RnZGZg800syk4tAnG4gMaU5qQWOeal56RyMXAGebp7hMQDTWNjYIyw/2ZbsPg6ly2QHckABUB2FAMccIHNTs0ryS+q5GLg8HX09PMAOoGDgSkzhYE/NzMvNbkoMa3EqrgkMzmbkYHVOb80r4QRpI/DJz85sSQzP4+NgSNC1z8trTi1ZP+NwNetcjuAdnBEwYTuiVQ9dF/HwMrAGpBZkpwBcQJHJFTa/u2h/hiNrw2sDMyRieXOJiBpAA7XZKwdAQAA
+      '4': H4sIAAAAAAAAAE2OvU7DQBCE1zg2x9EjKiREnSpdmnDE4UfKn4yLOE10Metwwlmj8wXkjgbllfIaNLwEJRWi4Q4Sia/a2dHODgdgwHtklKmT+hHhUMSDUTy7TcQw8uHgQlY4LqRBsFh9Q0+qUvPCac+HcCD1A2onuI1ZFagFLQrk0LjuiSgEbwJb7Jz+m6edr9PvJGoeA/DfWCRT6np7yGBP3cHRUhFmWuamvdCINJtLItQeBN1yRcZz3RtDuUTYP7vsi6t2iwPrl5k0qqQQ2KQ5yvMKTeft4/VkE9u3bLpbveeOlwCCsTLZ/V8rlu7sz5bjPAA/lc/dtbN/AMAU3xsrAQAA
+    blockList:
+      '0':
+        xOffset: 0.0
+        yOffset: 0.0
+        zOffset: 0.0
+        blockData: minecraft:stone_slab[type=bottom,waterlogged=false]

@@ -1,0 +1,26 @@
+Fence:
+  system-ID: Fence
+  displayName: '&cFence'
+  itemGlowEffect: false
+  spawnMaterial: PIG_SPAWN_EGG
+  itemLore: []
+  creator: ff5f37d0-c1ea-4736-b6c3-ebbfdd67a810
+  placeAbleSide: TOP
+  crafting:
+    recipe: 000,XAX,XAX
+    disable: false
+    index:
+      '0': AIR
+      A: STICK
+      X: STONE
+  projectData:
+    entities:
+      '0': H4sIAAAAAAAAAONiYOBg4HLNK8ksqQypLEhl4HYM8vUPig8OcfRzYWbgdEosTg3ISSxJZQACZgbW4NzEnBwgkxEo55lXllmcmZSTCuGz+SYWZacWgThcDBw++cmJJZn5eWwMHBG6/mlpxaklDFAAFIpCE2JlYA3ILEnOgEpHQqX3P0sDgQxWBubIxHKIUgA3umjZsgAAAA==
+      '1': H4sIAAAAAAAAAONiYOBg4HLNK8ksqQypLEhl4HYM8vUPig8OcfRzYWbgdEosTg3ISSxJZQACZgbW4NzEnBwgkxEo55lXllmcmZSTCuGz+SYWZacWgThcDBw++cmJJZn5eWwMHBG6/mlpxaklDFAAFIpCE2JlYA3ILEnOgEpHQqX3X3RfJ1L1MICVgTkysRyiFACASMv3sgAAAA==
+      '2': H4sIAAAAAAAAAONiYOBg4HLNK8ksqQypLEhl4HYM8vUPig8OcfRzYWbgdEosTg3ISSxJZQACZgbW4NzEnBwgkxEo55lXllmcmZSTCuGz+SYWZacWgThcDBw++cmJJZn5eWwMHBG6/mlpxaklDFAAFIpCE2JlYA3ILEnOgEpHQqXtj1Q9dF8n0sDKwByZWA5RCgAu7tRFsgAAAA==
+    blockList:
+      '0':
+        xOffset: 0.0
+        yOffset: 0.0
+        zOffset: 0.0
+        material: OAK_FENCE

@@ -1,0 +1,231 @@
+command /botsetup [<text>] [<text>]:
+	trigger:
+		if player has permission "bot.setup":
+			if arg 1 is "setspawn":
+				if arg 2 is "player":
+					set {botarena.spawn.player} to location of player 
+					message "&7The &cplayer &7spawn of the bot arena has been set to &8:&c %{botarena.spawn.player}%" to player 
+				else if arg 2 is "bot":
+					set {botarena.spawn.bot} to location of player 
+					message "&7The &cbot &7spawn of the bot arena has been set to &8:&c %{botarena.spawn.bot}%" to player 
+				else if arg 2 is "main":
+					set {botarena.spawn.main} to location of player 
+					message "&7The &cmain &7spawn of the bot arena has been set to &8:&c %{botarena.spawn.main}%" to player 
+				
+				else:
+					message "&8==========[&c&lPVP Bot&8]==========" to player 
+					message "&7>&c/botsetup setspawn <bot/player/main>" to player 
+					message "&7>&c/botsetup setsign" to player 
+					message "&7>&c/botsetup difficulty <easy/normal/hard>" to player 
+					message "&8==========[&c&lPVP Bot&8]==========" to player 
+			else if arg 1 is "setsign":
+				if arg 2 is not set:
+					if player's targeted block is sign:
+						set line 1 of player's targeted block to "&8=========="
+						set line 2 of player's targeted block to "&8[&c&lPVP Bot&8]"
+						set line 3 of player's targeted block to "&f - &c&lJoin &f-"
+						set line 4 of player's targeted block to "&8=========="
+					else:
+						message "&7This block is not a sign" to player 
+				else:
+					message "&7Wrong usage!" to player
+			else if arg 1 is "difficulty":
+				if arg 2 is "easy":
+					message "&7The bot arena &cdifficulty &7has been set to&8: &cEasy" to player 
+					set {botarena.difficulty} to "Easy"
+				else if arg 2 is "normal":
+					message "&7The bot arena &cdifficulty &7has been set to&8: &cNormal" to player 
+					set {botarena.difficulty} to "normal"
+				else if arg 2 is "hard":
+					message "&7The bot arena &cdifficulty &7has been set to&8: &cHard" to player 
+					set {botarena.difficulty} to "hard"
+				else:
+					message "&7Invaild entry" to player
+			else if arg 1 is "reload":
+				broadcast "&c&l%player%&7 is reloading the &c&lPVPBot &7plugin please wait a few second"
+				make console execute command "/sk reload %script%"
+				broadcast "&c&l%player%&7 has finished reloading sorry for the lag"
+			else:
+				message "&8==========[&c&lPVP Bot&8]==========" to player 
+				message "&7>&c/botsetup setspawn <bot/player/main>" to player 
+				message "&7>&c/botsetup setsign" to player 
+				message "&7>&c/botsetup reload" to player 
+				message "&7>&c/botsetup difficulty <easy/normal/hard>" to player 
+				message "&8==========[&c&lPVP Bot&8]==========" to player 
+		else:
+			message "&7Nope :3" to player 
+	
+on right click on a sign:
+	if line 2 of event-block is "&8[&c&lPVP Bot&8]":
+		if line 3 of event-block is "&f - &c&lJoin &f-":
+			if {botarena.ingame} is not set:
+				delete {botarena.player}
+				set {botarena.ingame} to "ingame"
+				make console execute command "/npc remove %{botarena.botid}%"
+				delete {botarena.botid}
+				heal the player
+				set {botarena.player} to player
+				create a citizen named "&c&lPVP Bot" at {botarena.spawn.bot}
+				set {botarena.botid} to last created citizen id
+				change citizen {botarena.botid} skin to "%player%"
+				make console execute command "/npc select %{botarena.botid}%"
+				make console execute command "/npc flyable false"
+				teleport the player to {botarena.spawn.player}
+				wait 1 tick				
+				make citizen {botarena.botid} vulnerable
+				set slot 0 of citizen {botarena.botid} to stone sword
+				if {botarena.difficulty} is "Easy":
+					set {botarena.damage} to 0.6
+				if {botarena.difficulty} is "Normal":
+					set {botarena.damage} to 0.4
+				if {botarena.difficulty} is "Hard":
+					set {botarena.damage} to 0.2
+				else:
+					set {botarena.damage} to 0.4
+				clear player's inventory
+				set slot 0 of player to stone sword of unbreaking 50
+				give 35 of mushroom soup to the player	
+				set player's gamemode to survival				
+				set {_num} to 3
+				set {botarena.soups} to 0
+				loop 3 times:
+					teleport citizen {botarena.botid} to {botarena.spawn.bot}
+					teleport the player to {botarena.spawn.player}
+					message "&7Your fight agianst the PVP bot will start in&8: &c%{_num}%" to the player
+					remove 1 from {_num}
+					wait 1 second
+				message "&7The battle has begun" to player
+				loop 1000 times:
+					set {_block} to location of player 
+					subtract 1 from y-coord of {_block}
+					if block at {_block} is not air:
+						move citizen {botarena.botid} to location of {botarena.player} at speed 1.5
+					if distance between {botarena.player} and citizen {botarena.botid} is smaller than 4:
+						make citizen {botarena.botid} look at location of {botarena.player}
+						make citizen {botarena.botid} attack {botarena.player}	
+					wait 10 ticks
+			else:
+				message "&7This PVP bot is in used by&8: &c%{botarena.player}%" to the player
+	
+on hunger meter change:
+	if {botarena.player} is player:
+		cancel event
+on click with mushroom stew:
+	if {botarena.player} is player:
+		if health of player is less than 10:
+			play raw sound "random.burp" at player with pitch 2 volume 0.5
+			cancel event
+			heal the player by 3.5 hearts
+			set tool to bowl
+			
+on damage:
+	if attacker's name is "&c&lPVP Bot":
+		if {botarena.player} is not attacker:
+			set damage to 2.0
+	if victim's name is "&c&lPVP Bot":
+		set damage to {botarena.damage}
+		if {botarena.difficulty} is "Easy":	
+			chance of 20%:
+				wait 2 ticks
+				set slot 0 of citizen {botarena.botid} to mushroom stew 
+				wait 2 ticks 
+				set slot 0 of citizen {botarena.botid} to bowl
+				add 1 to {botarena.soups}
+				wait 2 ticks
+				set slot 0 of citizen {botarena.botid} to stone sword 
+		if {botarena.difficulty} is "Normal":	
+			chance of 45%:
+				wait 2 ticks
+				set slot 0 of citizen {botarena.botid} to mushroom stew 
+				wait 2 ticks 
+				set slot 0 of citizen {botarena.botid} to bowl
+				add 1 to {botarena.soups}
+				wait 2 ticks
+				set slot 0 of citizen {botarena.botid} to stone sword 
+		if {botarena.difficulty} is "Hard":	
+			chance of 75%:
+				wait 2 ticks
+				set slot 0 of citizen {botarena.botid} to mushroom stew 
+				wait 2 ticks 
+				set slot 0 of citizen {botarena.botid} to bowl
+				add 1 to {botarena.soups}
+				wait 2 ticks
+				set slot 0 of citizen {botarena.botid} to stone sword 
+		else:	
+			chance of 20%:
+				wait 2 ticks
+				set slot 0 of citizen {botarena.botid} to mushroom stew 
+				wait 2 ticks 
+				add 1 to {botarena.soups}
+				set slot 0 of citizen {botarena.botid} to bowl
+				wait 2 ticks
+				set slot 0 of citizen {botarena.botid} to stone sword 
+		push the victim downwards at speed 1.0
+		push the victim backwards at speed 0.2
+		
+on death:
+	if {botarena.player} is attacker:
+		delete {botarena.ingame}
+		delete {botarena.player}
+		set death message to ""
+		clear attacker's inventory
+		wait 1 tick
+		execute console command "npc select %{botarena.botid}%"
+		execute console command "npc remove"
+		loop all entities in radius 30 of victim:
+			if loop-entity is item:
+				clear loop-entity
+		wait 1 tick
+		set attacker's gamemode to survival
+		teleport attacker to {botarena.spawn.main}
+		wait 1 tick
+		loop 3 times:
+			wait 5 ticks
+			shoot a firework from the attacker at speed 0.0		
+		heal the attacker
+		broadcast "&c&l%attacker%&7 has won the battle against the &c&lPVP Bot" 
+		delete {botarena.player}
+on death:
+	if {botarena.player} is victim:
+		delete {botarena.ingame} 
+		delete {botarena.player}
+		set {_health} to health of citizen {botarena.botid}
+		message "&8================" to player 
+		message "&7>&c&lBot Health&8: &4&l❤ %{_health}%" to player 
+		message "&7>&b&lBot Soups&8: &9&l◉ %{botarena.soups}%" to player 
+		message "&8================" to player 
+		execute console command "npc select %{botarena.botid}%"
+		execute console command "npc remove"
+		
+on respawn:
+	clear player's inventory
+	wait 1 tick
+	teleport player to {botarena.spawn.main}
+
+on quit:
+	if {botarena.player} is player:
+		execute console command "npc select %{botarena.botid}%"
+		execute console command "npc remove"
+		delete {botarena.player}
+		delete {botarena.bot}
+		delete {botarena.ingame}
+on drop:
+	if {botarena.player} is player:
+		wait 25 ticks 
+		spawn 25 of particle smoke offset by 0.5, 0.5, 0.5 at event-entity's location 
+		clear event-entity
+on break:
+	if {botarena.player} is player:
+		cancel event
+on command:
+	if {botarena.player} is player:
+		cancel event 
+		message "&7You cannot execute commands while in game" to player
+on skript load:
+	execute console command "npc select %{botarena.botid}%"
+	execute console command "npc remove"
+	teleport {botarena.player} to {botarena.spawn.main}
+	clear {botarena.player}'s inventory
+	delete {botarena.player}
+	delete {botarena.bot}
+	delete {botarena.ingame}

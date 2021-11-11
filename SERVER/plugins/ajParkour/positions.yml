@@ -1,0 +1,12 @@
+#  This is where the plugin stores all the areas and portals.
+#  Be careful when editing this file, it could cause some areas or portals to fail to load!
+areas:
+  LOBBY:
+    difficulty: BALANCED
+    max: 2147483647
+    pos1: MainLobby,156,90,14,-184.49695,84.45023
+    pos2: MainLobby,176,70,-7,-359.70233,88.499985
+portals:
+  '1':
+    area: LOBBY
+    loc: MainLobby,152,62,1,-90.1488,90.0

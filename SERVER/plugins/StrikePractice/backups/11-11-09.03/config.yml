@@ -1,0 +1,699 @@
+# StrikePractice Config
+# (supports all versions 1.7+)
+# Before you report bugs please check that the bug is not caused by other plugins or your custom spigot
+# Only regular spigot and paperspigot are officially supported
+# You must have a compatible version of Citizens if you want PvP Bot and playback features!
+# Requires Java 8 or higher
+
+prefix: '&7[&aTHE SERVER&7] '
+notify-updates: true
+wait-before-teleport: 3
+wait-before-leaving-ffa-arena: 10
+enable-practice-commands: true
+ping-multiplier: 1
+spawnitem-cooldown: 500
+autostack-arenas-on-enable: 2
+build-fights-in-main-arenas-world: false
+arenas-world: Arenas
+keep-arenas-loaded: true
+empty-arenas-world: true
+arenas-world-allow-monsters: false
+arenas-world-allow-animals: false
+performance-mode: true
+default-language: english
+clickable-messages: true
+clickable-message: '&b&c>&eClick Here&c<'
+date-format: dd/MM HH:mm:ss
+current-time-format: HH:mm
+server-time-increase: 0
+keep-chunks-loaded: false
+teleport-void-spawn: false
+join-lobby-teleport: true
+allow-spectating: true
+allow-brackets-spectating: true
+wait-before-spectator: 0
+spectator-teleporter-distance: 150
+spectator-stay-away: false
+hide-other-spectators: false
+spectator-menu: '&aSpectate'
+spectator-timer-period: 20
+spectator-teleport-item: COMPASS
+spectator-teleport-name: '&aTeleporter'
+spectator-leave-item: RED_ROSE
+spectator-leave-name: '&cLeave Spectator Mode'
+spectator-inventory-view: true
+disable-inventory-modifications: false
+spectator-block-all-commands: false
+spectator-blocked-commands:
+- /kit
+- /essentials:kit
+- /examplepluginname:exampleblockedcommand
+combo-hit-delay: 2
+default-hit-delay: 20
+preview:
+  shift-click-preview: true
+  select-kit-title: '&9Select Kit To Preview'
+  title: '&9Kit Preview'
+  pots: '&cEffects:'
+  potions: '&b<type> - <amplifier> - <duration> minutes'
+  elo-item: GOLD_INGOT
+  elo-name: '&cELO: <value>'
+custom-kit:
+  enabled: true
+  default-name: '&9Custom Kit'
+  icon-material: DIAMOND_SWORD
+  premade: premadecustomkit
+  second-line: STAINED_GLASS_PANE:2
+  main-title: '&cCustom Kit'
+  new-name: '&6New name: &r<name>'
+  custom-kit-name: '&cCustom Kit Icon'
+  helmets: '&cCustom Kit Helmets'
+  chestplates: '&cCustom Kit Chestplates'
+  leggings: '&cCustom Kit Leggings'
+  boots: '&cCustom Kit Boots'
+  item: '&cCustom Kit Item: '
+  air: '&6Air'
+  horse: '&cHorse: <value>'
+  combo: '&cCombo: <value>'
+  bow: '&cBow: <value>'
+  build: '&cBuild: <value>'
+  horse-item: GOLD_BARDING
+  combo-item: CLAY
+  bow-item: BOW
+  build-item: DIAMOND_PICKAXE
+  use-custom-items: false
+  replaces-kits:
+  - thisKitWillBeReplacedWithThePlayersCustomKit
+kit-editor-in-kit-selector: false
+kit-selector-editor-name: '&3Custom Kit Editor'
+kit-selector-editor-material: BOOK
+give-kit-automatically: true
+kit-editor-title: '&3Edit Kits'
+kit-editor-anvil: false
+kit-editor-save-sing-line-1: '[Save Kit]'
+kit-editor-leave-line-1: '[Leave Editor]'
+kit-editor-reset-kit-line-1: '[Reset Kit]'
+legacy-kit-editor: false
+kit-editor:
+  title: '&7Managing Kit Layout'
+  kit-format: <kit> &r# &a<number>
+  default-kit: '&eDefault Kit'
+  save:
+    item: ENCHANTED_BOOK
+    name: '&2Save Kit <kit>'
+  load:
+    item: CHEST
+    name: '&2Load Kit <kit>'
+    message: '&aKit <kit> loaded.'
+  rename:
+    item: NAME_TAG
+    name: '&2Rename Kit <kit>'
+    message: '&aPlease type the new name in the chat.'
+    success: '&aKit renamed to <kit>.'
+  delete:
+    item: HOPPER
+    name: '&2Delete Kit &2<kit>'
+    message: '&aKit deleted successfully.'
+circle-radius: 10
+bow-health: true
+bow-health-kits: '*'
+build-limit: 25
+winner-commands:
+  bot-duel: []
+  party-split: []
+  party-ffa: []
+  party-bots: []
+  party-vs-party: []
+team1-prefix: '&a'
+team2-prefix: '&c'
+back-button-name: '&cBack'
+preview-custom-kit: '&6Click here to preview the custom kit'
+insta-void: true
+insta-void-async: false
+ffa-reset-delay: 30
+ffa-rejoin-automatically: true
+rematch-item:
+  enabled: true
+  remove-after: 10
+  slot: 8
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: DIAMOND
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"light_purple","text":"Rematch
+        <opponent>"}],"text":""}'
+match:
+  block-all-commands: false
+  blocked-commands:
+  - /kit
+  - /essentials:kit
+  - /exampleblockedcommand
+  - /examplepluginname:exampleblockedcommand
+countdown-time: 4
+ffa-countdown: 0
+countdown-sound: NOTE_PLING
+countdown-inventory-update: true
+match-start-sound: LEVEL_UP
+fight-duration-limit: 20
+playback-gui-title: '&bPlayback matches'
+inventory-title: '&bSelect Kit'
+map-selector:
+  enabled: true
+  title: '&bSelect Map'
+  random-map-button:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: WHITE_WOOL
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"blue","text":"Random
+        Map"}],"text":""}'
+max-recording-time: 600
+record-all-fights: true
+record-elo-fights: true
+kill-cam: false
+playback-bot-name: '[Replay]<player>'
+remove-record-after: 7.0
+queue-inventory-title: '&3Queue'
+ranked-queue-inventory-title: '&3Ranked Queue'
+premium-queue-inventory-title: '&cPremium Queue'
+2v2-ranked-queue-inventory-title: '&3Ranked 2v2 Queue'
+2v2-queue-inventory-title: '&32v2 Queue'
+premium-permission-message: '&cYou do not have access to the premium queue'
+quit-item-name: '&c&LLeave current queue.'
+leave-queue-item: false
+separate-queues: true
+max-ranked-queue-ping: 500
+limit-rankeds: true
+limit-unrankeds: false
+rankeds-per-day: 20
+unrankeds-per-day: 50
+unlimited: unlimited
+queue-cooldown: false
+queue-cooldown-time: 10
+elo-queue-cooldown: false
+elo-queue-cooldown-time: 20
+request-cooldown: 5000
+max-block-changes-per-tick-per-arena: 10
+experimental-block-updater: true
+in-queue: '&dPlayers In Queue: &e<players>'
+in-match: '&dPlayers Fighting: &e<players>\n \n&dMatches won: &e<wins_<raw_kit>>\n&dMatches
+  lost: &e<losses_<raw_kit>>'
+change-icon-amount: true
+ranked:
+  kills-required: 10
+  elo-range-time: 5
+  elo-range-increase: 50
+  anyone-after: 60
+fight-inventory:
+  rows: 6
+  item-start-slot: 1
+  helmet-slot: 36
+  chestplate-slot: 37
+  leggings-slot: 38
+  boots-slot: 39
+  food-slot: 48
+  playback-slot: 46
+  health-slot: 47
+  pots-slot: 50
+  pots-left-slot: 49
+  food: '&6Food: <food>/20'
+  health: '&6Health: <health>/20'
+  dead: '&cDead'
+  effect-displayname: '&7Potion Effects'
+  pots: '&3Type - Amplifier - Duration'
+  effect: '&b<type> <amplifier> (<duration> minutes)'
+  inventory: '&7<player>''s inventory'
+  pots-left: '&cHealth Potions Left: <potions>'
+  match-stats-lore:
+  - '&dHits: &e<hits>'
+  - '&dLongest combo: &e<combo>'
+  - '&dPotions Thrown: &e<potions_thrown>'
+  - '&dPotions Missed: &e<potions_missed>'
+  - '&dHealing Accuracy: &e<potion_accuracy>'
+  soups-left: '&cSoups Left: &e<soups>'
+  next-inventory-name: '&dShow <player>''s inventory'
+  next-inventory-slot: 53
+  next-inventory-item: PAPER
+spectator-inventory-messages: true
+inventory-message-your: '&6Your team: '
+inventory-message-opponent: '&6Opponent team: '
+winner-inventories: '&aWinner inventories:'
+loser-inventories: '&cLoser inventories:'
+fight-inventory-message:
+- '&7&m----------------------------'
+- '&6&lClick for inventories'
+- '&aWinner: &f<winner>&7[&e<winner_pots>&7]'
+- '&cLoser: &f<loser>&7[&e<loser_pots>&7]'
+- '&7&m----------------------------'
+fight-inventory-player: '&e<player>'
+inventory-separator: '&e, '
+bot-fast-potions: true
+enable-bot-pearling: true
+main-thread-bot: false
+fix-bot-damage: true
+fix-bot-kb: true
+bot-kb-amount: 0.27
+bot-kb-amount-upward: 0.38
+bot-kb-amount-upward-min: 0.27
+bot-name: BOT_<player>
+always-same-skin: true
+bot-skin: steve
+bot-teleport-error-fix: true
+bot-difficulty:
+  title: '&aBot Difficulty'
+  inventory-size: 9
+  easy:
+    reach: 2.8
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: LIME_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Easy"}],"text":""}'
+        lore:
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Reach:
+          "},{"italic":false,"color":"green","text":"2.7"}],"text":""}'
+  normal:
+    reach: 3.9
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: YELLOW_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Normal"}],"text":""}'
+        lore:
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Reach:
+          "},{"italic":false,"color":"green","text":"3"}],"text":""}'
+  hard:
+    reach: 5.6
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: ORANGE_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Hard"}],"text":""}'
+        lore:
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Reach:
+          "},{"italic":false,"color":"green","text":"3.2"}],"text":""}'
+  hacker:
+    reach: 6
+    icon:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: RED_STAINED_GLASS_PANE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Hacker"}],"text":""}'
+        lore:
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Reach
+          "},{"italic":false,"color":"green","text":"4.3"}],"text":""}'
+player-spawn-hider:
+  enabled: false
+  spawn-corner1: 291.0, 164.0, 107.0, 0.0, 0.0, MainLobby
+  spawn-corner2: 91.0, -36.0, -93.0, 0.0, 0.0, MainLobby
+player-settings:
+  inventory-size: 27
+  title: '&a&lSettings'
+  language-item: PAPER
+  language-name: '&eChange Language'
+  language-slot: 14
+  duel-requests-item: BLAZE_ROD
+  duel-requests-name: '&eDuel Settings'
+  duel-requests-slot: 12
+  scoreboard-item: BOOK
+  scoreboard-name: '&eToggle Scoreboard'
+  scoreboard-slot: 10
+  hide-players-item: SLIME_BALL
+  hide-players-name: '&eToggle Player Hider'
+  hide-players-slot: 16
+  default-values:
+    scoreboard-disabled: false
+    hide-players: false
+    duel-requests-disabled: false
+    admin-scoreboard: false
+admin-scoreboard-color1: '&6'
+admin-scoreboard-color2: '&e'
+language:
+  automatic-language: true
+  title: '&3Select your language'
+  your-language-item: WOOL
+  your-language: '&b&lYour language: <language>'
+  inv-size: 18
+duel-inventory: true
+duel-inventory-title: '&3Duel'
+duel-inventory-duel: '&3Duel a Player'
+duel-inventory-pending: '&3Pending Duel Requests'
+duel-inventory-toggle-disabled: '&3Toggle Duel Requests (disabled)'
+duel-inventory-toggle-enabled: '&3Toggle Duel Requests (enabled)'
+enable-colored-names: true
+any-kit-colored-armor: true
+rollback-on-enable-if-crashed: false
+disable-grass-spread: true
+disable-crafting-in-fight: true
+no-hunger-in-lobby: true
+anti-rain: true
+anti-fire: true
+enderpearl-fix: true
+anti-lava-generator: false
+remove-arrows: true
+golden-heads: true
+enable-sign-search: false
+golden-head-effects:
+- ==: PotionEffect
+  effect: 22
+  duration: 1800
+  amplifier: 0
+  ambient: true
+  has-particles: true
+  has-icon: true
+- ==: PotionEffect
+  effect: 10
+  duration: 180
+  amplifier: 1
+  ambient: true
+  has-particles: true
+  has-icon: true
+disable-spawn-damage: true
+disable-building-without-build-kit: true
+disable-building-outside-arenas: false
+disable-regen-with-uhc-kits: true
+prevent-item-dropping: true
+prevent-tool-dropping: true
+remove-all-drops-on-startup: true
+insta-soup: true
+remove-bottles: true
+remove-drops: 3
+death:
+  disable-message: true
+  lightning: true
+  disable-keep-inventory: true
+  respawn: true
+economy:
+  enabled: false
+  kill-give: false
+  kill-amount: 10
+  death-withdraw: false
+  withdraw-amount: 5
+storm-wall-outside-arenas: false
+enderpearl-cooldown:
+  enabled: true
+  cooldown: 10
+  format: '0'
+  interval: 2
+  pearl-name: '&bCooldown: &c<time> seconds'
+database:
+  mysql: false
+  host: localhost
+  port: 3306
+  user: practice
+  password: strikepracticeisbest
+  name: strikepractice
+save-all-fights: false
+save-elo-fights: false
+legacy-fight-format: true
+match-link-after-fight: true
+match-link: '&9Match link: https://demo.legendeffects.co.uk/StrikePractice-Web'
+top-placeholders-require-mysql: false
+player-stats-auto-save-period: 600
+starting-elo: 1000
+global-elo-ignore-starting-elo: false
+show-stats:
+  deaths: true
+  kills: true
+  elo: true
+  party-wins: true
+  lms: true
+  brackets: true
+  global-elo: true
+sign-stats:
+  line-1: '&3[&4Stats&3 ]'
+  line-2: '&4Click me!'
+  player-line: '&5<player>'
+  brackets-line: '&5Brackets Wins'
+  kills-line: '&5Kills'
+  deaths-line: '&5Deaths'
+  lms-line: '&5LMS Wins'
+  party-wins-line: '&5Party Wins'
+  elo-line: '&5<kit> Elo'
+  global-elo-line: '&5Global Elo'
+  value: '&3<value>'
+knockback:
+  enabled: false
+  only-combo: false
+  default:
+    air-horizontal: 0.93
+    air-vertical: 0.93
+    horizontal: 0.82
+    vertical: 0.88
+  combo:
+    air-horizontal: 0.82
+    air-vertical: 0.82
+    horizontal: 0.75
+    vertical: 0.78
+elo-rewards:
+  example_level:
+    elo: 1200
+    commands:
+    - examplecommand <player> <level>
+elo-ranks:
+  enabled: true
+  send-everytime: false
+  ranks:
+    silver1:
+      name: '&7Silver I'
+      elo-range: 0-900
+    silver2:
+      name: '&7Silver II'
+      elo-range: 901-930
+    silver3:
+      name: '&7Silver III'
+      elo-range: 931-950
+    silver4:
+      name: '&7Silver IV'
+      elo-range: 951-980
+    silver5:
+      name: '&7Silver V'
+      elo-range: 981-1000
+    gold1:
+      name: '&6Gold I'
+      elo-range: 1001-1010
+    gold2:
+      name: '&6Gold II'
+      elo-range: 1011-1020
+    gold3:
+      name: '&6Gold III'
+      elo-range: 1021-1035
+    gold4:
+      name: '&6Gold IV'
+      elo-range: 1036-1050
+    emerald1:
+      name: '&aEmerald I'
+      elo-range: 1051-1100
+    emerald2:
+      name: '&aEmerald II'
+      elo-range: 1101-1150
+    emerald3:
+      name: '&aEmerald III'
+      elo-range: 1151-1200
+    diamond:
+      name: '&bDiamond'
+      elo-range: 1201-9999
+party:
+  info-command:
+  - '&6Party Leader: &e<owner>'
+  - '&6Members [<size>]: &e<members>'
+  settings:
+    player-limit: '&6Player Limit: &e<value>'
+    open-party:
+      enabled: '&6Party Is Now Open'
+      disabled: '&6Click To Open Your Party'
+    public-party:
+      enabled: '&6Party Is Now Public & Broadcasting'
+      disabled: '&6Click To Open & Broadcast Your Party'
+  in-match-party: '&c<name>''s party (in a fight)'
+  not-in-match-party: '&e<name>''s party (not fighting)'
+  your-party: '&6Your party'
+  allow-rod-boosting: false
+  member: '&e<name>'
+  show-members-limit: 9
+  show-members-limit-reached: '&e&lAnd <more_members> members more.'
+  inventory-title: '&3Party Fights'
+  party-ffa-enabled: true
+  ffa-item: DIAMOND
+  ffa-item-name: '&bParty FFA'
+  ffa-item-lore:
+  - '&8Fight against other players in your party'
+  ffa-item-slot: 48
+  party-split-enabled: true
+  split-item: DIAMOND_SWORD
+  split-item-name: '&bSplit Party'
+  split-item-lore:
+  - '&8Splits your party into two teams'
+  - '&8Fight against other players in your party'
+  split-item-slot: 49
+  party-playback-enabled: true
+  party-playback-item: PAPER
+  party-playback-item-name: '&bParty Playback'
+  party-playback-item-lore:
+  - '&8Replay matches with your party'
+  party-playback-item-slot: 50
+  party-vs-bots-enabled: true
+  party-vs-bots-item: SKULL_ITEM
+  party-vs-bots-item-name: '&bParty Vs Bots'
+  party-vs-bots-item-lore:
+  - '&8Fight against the bots'
+  party-vs-bots-item-slot: 51
+  chat-format: '&5<player>: &b<message>'
+  player-chat-prefix: '@'
+  create:
+    costs: false
+    amount: 20
+party-settings-title: '&6Party Settings'
+max-party-members: 10
+public-party-broadcast-time: 15
+party-invite-cooldown: 3000
+cooldowns:
+  hostevent:
+    brackets: 90
+    sumo: 60
+    lms: 90
+    koth: 120
+    juggernaut: 120
+events-gui:
+  title: '&cEvents'
+  size: 27
+  items:
+  - ==: GUIItem
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: INK_SAC
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Host
+          Sumo Event"}],"text":""}'
+        lore:
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Click
+          to host a sumo event"}],"text":""}'
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Cooldown:
+          <cooldown_sumo> [display=<is_cooldown_sumo>]"}],"text":""}'
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        - HIDE_POTION_EFFECTS
+        - HIDE_DYE
+    slot: 10
+    command: /hostevent sumo
+  - ==: GUIItem
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: AIR
+      amount: 0
+    slot: 12
+    command: /hostevent brackets
+  - ==: GUIItem
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: DIAMOND_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Host
+          Last Man Standing Event"}],"text":""}'
+        lore:
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Click
+          to host a LMS event"}],"text":""}'
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Cooldown:
+          <cooldown_lms> [display=<is_cooldown_lms>]"}],"text":""}'
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        - HIDE_POTION_EFFECTS
+        - HIDE_DYE
+    slot: 14
+    command: /hostevent lms
+  - ==: GUIItem
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2586
+      type: GOLDEN_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Host
+          King of The Hill Event"}],"text":""}'
+        lore:
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Click
+          to host a KOTH event"}],"text":""}'
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"red","text":"Cooldown:
+          <cooldown_koth> [display=<is_cooldown_koth>]"}],"text":""}'
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        - HIDE_POTION_EFFECTS
+        - HIDE_DYE
+    slot: 16
+    command: /hostevent koth
+automatic-events:
+  broadcast:
+    delay: 10
+    times: 5
+    lms: '&c&l<host> is hosting a <kit>&c&l LMS event! Click to join!'
+    brackets: '&c&l<host> is hosting a <kit>&c&l 1v1 tournament event! Click to join!'
+    sumo: '&c&l<host> is hosting a sumo event! Click to join!'
+    juggernaut: '&c&l<host> is hosting a juggernaut event! Click to join!'
+    koth: '&c&l<host> is hosting a KOTH event! Click to join!'
+  juggernaut-kit: gapple
+  juggernaut-player-kit: nodebuff
+  koth-kit: nodebuff
+  lms-kit: nodebuff
+  brackets-kit: nodebuff
+  sumo-kit: sumo
+  times:
+  - 25:30:lms
+brackets:
+  allow-spectating: true
+  winner-cmd: eco give <player> 100
+  auto-start: 15
+  auto-start-after-seconds: 10
+sumo:
+  allow-spectating: true
+  winner-cmd: eco give <player> 100
+  auto-start: 15
+  auto-start-after-seconds: 10
+koth:
+  anytime-join: true
+  respawn: true
+  auto-respawn: true
+  team1: '&a&lTeam Green'
+  team2: '&c&lTeam Red'
+  timer: 300
+client-cooldowns:
+  lunar: true
+  badlion: true
+version: 3.4.0-SNAPSHOT
+lobby: 189.43253462095956, 64.5, 5.545725775021841, 89.700485, 90.0, MainLobby

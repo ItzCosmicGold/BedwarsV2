@@ -1,0 +1,4 @@
+config:
+  metrics: true
+  WorldGuard:
+    enabled: true
